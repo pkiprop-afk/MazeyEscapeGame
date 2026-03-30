@@ -14,8 +14,11 @@ WHITE = (255, 255, 255)
 
 class Player(pygame.sprite.Sprite):
     """_
-    Represents the player character and it inherits from pygame.sprite.Sprite to work with Pygame's group system
+    Represents the player character and it inherits from pygame.sprite.Sprite to work with Pygame's group system.
     """
+    def __init__(self, x, y):
+        super().__init__()      #--> Initialize the Sprite base class
+        self.image = pygame.Surface(())
     
 
 
