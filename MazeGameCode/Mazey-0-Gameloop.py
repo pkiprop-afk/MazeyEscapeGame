@@ -13,7 +13,7 @@ WHITE = (255, 255, 255)
 GREEN = (130, 130, 130)
 
 # IMAGES
-img = pygame.image.load("Images/background.jpg") 
+img = pygame.image.load("MazeGameCode/Images/background.jpg") 
 background_image = pygame.transform.scale(img, (900, 600))
 
 pygame.init()       # --> Initializing pygame
