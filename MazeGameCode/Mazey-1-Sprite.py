@@ -60,8 +60,8 @@ font = pygame.font.Sysfont("Arial", 20)
 # Creating Sprite instances
 player = Player(x=100, y=100)
 
-wall1 = Wall()
-wall2 = Wall()
+wall1 = Wall(x=200, y=260)
+wall2 = Wall(x=400, y=200)
 wall3 = Wall()
 
 # CONSTANTS
