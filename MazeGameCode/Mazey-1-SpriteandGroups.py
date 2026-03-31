@@ -83,6 +83,12 @@ while running:
     
     all_sprites.draw(screen)
     
-
-# CONSTANTS
-GAME_TITLE = "Welcome to my World"
+    info1 = font.render("BLUE = Player Sprite | GRAY = Wall Sprites", True, WHITE)
+    info2 = font.render("all_sprites.update() and all_sprites.draw() handle everything.", True, WHITE)
+    screen.blit(info1, (20, 20))
+    screen.blit(info2, (20, 50))
+    
+    pygame.display.flip()
+    
+    
+pygame.quit()
