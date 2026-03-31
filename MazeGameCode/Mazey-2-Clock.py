@@ -48,3 +48,6 @@ while running:
     red_x += RED_SPEED_PIXELS
     
     green_x +=GREEN_SPEED_PPS * delta
+    
+    if red_x > SCREEN_WIDTH:
+        red_x = -S
