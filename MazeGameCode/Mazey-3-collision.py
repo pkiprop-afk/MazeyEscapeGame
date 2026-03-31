@@ -41,3 +41,5 @@ class Player(pygame.sprite.Sprite):
             self.rect.x -=int(self.speed * delta)
         if keys[pygame.K_RIGHT]:
             self.rect.x += int(self.speed * delta)
+        
+        hit
