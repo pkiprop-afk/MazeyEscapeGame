@@ -45,8 +45,8 @@ class Wall(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         
-        self.image = pygame.Surface(())     #--> defines what the sprite will look like
-        self.image.fill()
+        self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))     #--> defines what the sprite will look like
+        self.image.fill(BLUE)
         
         self.rect = self.image.get_rect()   
         self.rect.topleft = (x, y)
