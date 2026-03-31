@@ -19,4 +19,4 @@ YELLOW = (255, 220, 0)
 RED = (220, 60, 60)
 DARK_GREEN = (0, 140, 0)
 
-PLAYER_SPEED = 250
+PLAYER_SPEED = 250  #-->pixels per second
