@@ -11,7 +11,7 @@ TILE_SIZE = 60
 BLACK = (0, 0, 0)
 GRAY = (150, 150, 150)
 WHITE = (255, 255, 255)
-BLUE = 
+BLUE = (50, 100, 255)
 
 class Player(pygame.sprite.Sprite):
     """_
