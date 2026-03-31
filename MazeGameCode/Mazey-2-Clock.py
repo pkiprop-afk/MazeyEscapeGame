@@ -65,7 +65,7 @@ while running:
     pygame.draw.rect(screen, GREEN, green_rect)
     
     # labels
-    fps = clock.get_fps
+    fps = clock.get_fps()
     screen.blit(font_large.render(f"FPS: {fps:.1f}", True, WHITE), (20, 20))
     
     screen.blit(font_large.render("RED - No Delta time(speed = 3 pixels/frame)", True, RED,), (20, 155))
