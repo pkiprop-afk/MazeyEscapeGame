@@ -72,3 +72,8 @@ while running:
     
     screen.blit(font_small.render( 
     "Both look similar now.", True, YELLOW),(20, 560))
+    
+    pygame.display.flip()
+
+pygame.quit
+sys.exit()
