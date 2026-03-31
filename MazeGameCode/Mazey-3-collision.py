@@ -38,4 +38,6 @@ class Player(pygame.sprite.Sprite):
         keys = pygame.key.get_pressed()
         
         if keys[pygame.K_LEFT]:
-            self.rect.x -=int(self)
+            self.rect.x -=int(self.speed * delta)
+        if keys[pygame.K_RIGHT]:
+            self.rect.x += int(self.speed * delta)
