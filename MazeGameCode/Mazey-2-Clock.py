@@ -20,5 +20,6 @@ pygame.init()       # --> Initializing pygame
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption(TITLE)
 
-clock = pygame.time.Clock() #-->
+clock = pygame.time.Clock() #--> pygame.time.Clock() - creates a clock object
+
 
