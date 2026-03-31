@@ -35,6 +35,9 @@ class Player(pygame.sprite.Sprite):
         """
         self.rect.x += self._move_x
         
+        if self.rect.right >= SCREEN_WIDTH or self.rect.left <= 0:
+            self
+        
         
         
     
