@@ -21,3 +21,21 @@ DARK_GREEN = (0, 140, 0)
 
 PLAYER_SPEED = 250  #-->pixels per second
 
+class Player(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((TILE_SIZE - 10, TILE_SIZE - 10))
+        self.image.fill(BLUE)
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self.speed = PLAYER_SPEED 
+    
+    def update(self, delta, walls):
+        """ 
+        Moves players with arrow keys and wall collisions.
+        Horizontal and Vertical movements
+        """
+        keys = pygame.key.get_pressed()
+        
+        if keys[pygame.K_LEFT]:
+            self.rect.x -=int(self)
