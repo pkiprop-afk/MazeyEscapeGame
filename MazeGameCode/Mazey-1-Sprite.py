@@ -27,6 +27,9 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
         
+        self._move_x  = 2       #--> Internal movement variable
+        
+        
         
     
 
