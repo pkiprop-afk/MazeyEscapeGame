@@ -45,5 +45,7 @@ class Player(pygame.sprite.Sprite):
         hit_walls = pygame.sprite.spritecollide(self, walls, False)
         for wall in hit_walls:
             if keys[pygame.K_RIGHT]:
-                self.rect.right = wall.rect.left
-            
+                self.rect.right = wall.rect.left        #--> Moving right
+            if keys[pygame.K_LEFT]:
+                self.rect.left = wall.rect.right        #--> Moving left
+                
