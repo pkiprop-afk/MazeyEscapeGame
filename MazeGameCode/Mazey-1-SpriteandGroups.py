@@ -69,7 +69,15 @@ all_sprites = pygame.sprite.Group()
 all_sprites.add(player, wall1, wall2, wall3)
 
 # Game loop
+running = True
 
+while running:
+    # event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False 
+    
+    
 
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
