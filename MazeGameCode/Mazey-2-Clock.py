@@ -59,3 +59,5 @@ while running:
     
     red_rect = pygame.Rect(int(red_x), 180, SQUARE_SIZE, SQUARE_SIZE)
     pygame.draw.rect(screen, RED, red_rect)
+    
+    green_rect
