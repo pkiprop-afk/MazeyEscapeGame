@@ -77,6 +77,9 @@ while running:
         if event.type == pygame.QUIT:
             running = False 
     
+    all_sprites.update()
+    
+    screen.fill()
     
 
 # CONSTANTS
