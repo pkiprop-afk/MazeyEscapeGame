@@ -30,5 +30,10 @@ green_x = 0.0
 
 SQUARE_SIZE = 50
 RED_SPEED_PIXELS = 3        #--> 3 pixels per frame
-GREEN_SPEED_PPS = 200
+GREEN_SPEED_PPS = 200       #--> 200 pixels per second
 
+running = True
+
+while running:
+    
+    clock.tick(MAX_FPS)
