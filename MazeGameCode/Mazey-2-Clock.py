@@ -71,5 +71,4 @@ while running:
     screen.blit(font_large.render("GREEN - With Delta time (speed = 200 pixels/sec)", True, GREEN), (20, 335))
     
     screen.blit(font_small.render( 
-    "Both look similar now.", True, YELLOW),(20, 560)                            
-                                )
+    "Both look similar now.", True, YELLOW),(20, 560))
