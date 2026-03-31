@@ -64,5 +64,7 @@ wall1 = Wall(x=200, y=260)
 wall2 = Wall(x=400, y=200)
 wall3 = Wall(x=600, y=300)
 
+# Create groups
+
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
