@@ -36,8 +36,16 @@ class Player(pygame.sprite.Sprite):
         self.rect.x += self._move_x
         
         if self.rect.right >= SCREEN_WIDTH or self.rect.left <= 0:
-            self
+            self._move_x *= -1
+
+class Wall(pygame.sprite.Sprite):
+    """ 
+    Represents a single wall tile in the maze
+    """
+    def __init__(self, x, y):
+        super().__init__()
         
+        self.image = pygame.Surface(())
         
         
     
