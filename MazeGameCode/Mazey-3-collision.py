@@ -48,4 +48,11 @@ class Player(pygame.sprite.Sprite):
                 self.rect.right = wall.rect.left        #--> Moving right
             if keys[pygame.K_LEFT]:
                 self.rect.left = wall.rect.right        #--> Moving left
-                
+        
+        # Moving vertically
+        if keys[pygame.K_UP]:
+            self.rect.y -= int(self.speed * delta)
+        if keys[pygame.K_DOWN]:
+            self.rect.y += int(self.speed * delta)
+        
+        
