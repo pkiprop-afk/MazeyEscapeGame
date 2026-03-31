@@ -55,4 +55,12 @@ class Player(pygame.sprite.Sprite):
         if keys[pygame.K_DOWN]:
             self.rect.y += int(self.speed * delta)
         
+        # Checking vertical collisions after vertical movement
+        hit_walls = pygame.sprite.spritecollide(self, walls, False)
+        for wall in hit_walls:
+            if keys[pygame.K_DOWN]:
+                self.rect.bottom = wall.rect.top
+            if keys[pygame.K_UP]:
+                self.rect.top = wall.rect.bottom
         
+        self.rect.clamp
