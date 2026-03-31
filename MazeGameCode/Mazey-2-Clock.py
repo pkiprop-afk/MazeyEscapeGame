@@ -28,5 +28,7 @@ font_small = pygame.font.SysFont("Arial", 18)
 red_x = 0.0
 green_x = 0.0
 
-
+SQUARE_SIZE = 50
+RED_SPEED_PIXELS = 3        #--> 3 pixels per frame
+GREEN_SPEED_PPS = 200
 
