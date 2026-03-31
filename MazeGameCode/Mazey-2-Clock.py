@@ -22,4 +22,6 @@ pygame.display.set_caption(TITLE)
 
 clock = pygame.time.Clock() #--> pygame.time.Clock() - creates a clock object
 
+font_large = pygame.font.SysFont("Arial", 22, bold=True)
+font_small = pygame.font.SysFont("Arial", 18)
 
