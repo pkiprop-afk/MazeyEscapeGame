@@ -37,4 +37,5 @@ running = True
 while running:
     
     clock.tick(MAX_FPS)
-    delta = clock.get_time() / 1000.0       # Convert milliseconds to 
+    delta = clock.get_time() / 1000.0       # Convert milliseconds to seconds to get delta time.
+    
