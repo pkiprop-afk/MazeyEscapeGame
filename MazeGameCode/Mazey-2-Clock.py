@@ -68,3 +68,8 @@ while running:
     screen.blit(font_large.render(f"FPS: {fps:.1f}", True, WHITE), (20, 20))
     
     screen.blit(font_large.render("RED - No Delta time(speed = 3 pixels/frame)", True, RED,), (20, 155))
+    screen.blit(font_large.render("GREEN - With Delta time (speed = 200 pixels/sec)", True, GREEN), (20, 335))
+    
+    screen.blit(font_small.render( 
+    "Both look similar now"                            
+                                ))
