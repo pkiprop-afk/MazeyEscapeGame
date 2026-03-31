@@ -65,7 +65,8 @@ wall2 = Wall(x=400, y=200)
 wall3 = Wall(x=600, y=300)
 
 # Creating Groups
-all_sprite
+all_sprites = pygame.sprite.Group()
+all_sprites.add(player, wall1, wall2, wall3)
 
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
