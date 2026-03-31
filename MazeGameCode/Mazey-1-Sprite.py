@@ -29,6 +29,12 @@ class Player(pygame.sprite.Sprite):
         
         self._move_x  = 2       #--> Internal movement variable
         
+    def update(self):
+        """
+        Player bounces from left to right automatically
+        """
+        
+        
         
         
     
