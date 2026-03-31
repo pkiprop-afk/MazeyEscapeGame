@@ -25,3 +25,7 @@ clock = pygame.time.Clock() #--> pygame.time.Clock() - creates a clock object
 font_large = pygame.font.SysFont("Arial", 22, bold=True)
 font_small = pygame.font.SysFont("Arial", 18)
 
+red_x = 0.0
+green_x = 0.0
+
+
