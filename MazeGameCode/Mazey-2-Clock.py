@@ -39,3 +39,9 @@ while running:
     clock.tick(MAX_FPS)
     delta = clock.get_time() / 1000.0       # Convert milliseconds to seconds to get delta time.
     
+    # event handling
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+
+    red_x += RED_SPEED_PIXELS
