@@ -5,7 +5,7 @@ import sys
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 TITLE = "MAZEY"
-TITLE_SIZE = 60
+TILE_SIZE = 60
 
 #COLORS
 BLACK = (0, 0, 0)
@@ -46,6 +46,7 @@ class Wall(pygame.sprite.Sprite):
         super().__init__()
         
         self.image = pygame.Surface(())
+        
         
         
     
