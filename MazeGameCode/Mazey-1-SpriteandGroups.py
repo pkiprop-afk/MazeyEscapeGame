@@ -23,8 +23,6 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))     #--> defines what the sprite looks like
         self.image.fill(BLUE)       # -->
         
-        pygame.draw.rect(self.image, (), self.image.get_rect(), 3)      #--> Drawing a dark border on the wall to make the tiles visually distinct
-        
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
         
@@ -48,6 +46,8 @@ class Wall(pygame.sprite.Sprite):
         
         self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))     #--> defines what the sprite will look like
         self.image.fill(BLUE)
+        
+        pygame.draw.rect(self.image, (), self.image.get_rect(), 3)      #--> Drawing a dark border on the wall to make the tiles visually distinct
         
         
         self.rect = self.image.get_rect()   
