@@ -61,7 +61,8 @@ font = pygame.font.Sysfont("Arial", 20)
 player = Player(x=100, y=100)
 
 wall1 = Wall()
-wall2
+wall2 = Wall()
+wall3 = Wall()
 
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
