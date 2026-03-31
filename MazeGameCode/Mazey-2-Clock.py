@@ -15,5 +15,8 @@ BLUE = (50, 100, 255)
 GREEN = ( 60, 200, 60)
 YELLOW = (255, 220, 0)
 
+pygame.init()       # --> Initializing pygame
 
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption(TITLE)
 
