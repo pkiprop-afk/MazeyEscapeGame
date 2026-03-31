@@ -33,7 +33,7 @@ class Player(pygame.sprite.Sprite):
         """
         Player bounces from left to right automatically
         """
-        
+        self.rect.x += self._move_x
         
         
         
