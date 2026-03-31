@@ -22,7 +22,9 @@ class Player(pygame.sprite.Sprite):
         self.image = pygame.Surface(())     #--> defines what the sprite looks like
         self.image.fill()       # -->
         
-        pygame.draw.rect()
+        pygame.draw.rect(self.image, (), self.image.get_rect(), 3)
+        
+        
     
 
 
