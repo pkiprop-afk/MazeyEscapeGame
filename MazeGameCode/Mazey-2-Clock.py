@@ -44,4 +44,7 @@ while running:
         if event.type == pygame.QUIT:
             running = False
 
+    # moving both squares 
     red_x += RED_SPEED_PIXELS
+    
+    green_x +=GREEN_SPEED_PPS * delta
