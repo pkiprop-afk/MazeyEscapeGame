@@ -18,8 +18,11 @@ class Player(pygame.sprite.Sprite):
     """
     def __init__(self, x, y):
         super().__init__()      #--> Initialize the Sprite base class
+        
         self.image = pygame.Surface(())     #--> defines what the sprite looks like
         self.image.fill()       # -->
+        
+        pygame.draw.rect()
     
 
 
