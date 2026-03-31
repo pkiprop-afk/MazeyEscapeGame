@@ -51,12 +51,10 @@ class Wall(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()   
         self.rect.topleft = (x, y)
         
-        
-        
-    
-
 
 pygame.init() # --> Initializing Pygame
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption(TITLE)
 
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
