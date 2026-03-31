@@ -57,5 +57,8 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption(TITLE)
 font = pygame.font.Sysfont("Arial", 20)
 
+# Creating Sprite instances
+player = Player(x=100,)
+
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
