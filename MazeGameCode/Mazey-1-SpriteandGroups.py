@@ -79,7 +79,9 @@ while running:
     
     all_sprites.update()
     
-    screen.fill()
+    screen.fill(BLACK)
+    
+    all_sprites.draw(screen)
     
 
 # CONSTANTS
