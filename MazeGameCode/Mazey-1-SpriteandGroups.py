@@ -20,8 +20,8 @@ class Player(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()      #--> Initialize the Sprite base class
         
-        self.image = pygame.Surface(())     #--> defines what the sprite looks like
-        self.image.fill()       # -->
+        self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))     #--> defines what the sprite looks like
+        self.image.fill(BLUE)       # -->
         
         pygame.draw.rect(self.image, (), self.image.get_rect(), 3)      #--> Drawing a dark border on the wall to make the tiles visually distinct
         
