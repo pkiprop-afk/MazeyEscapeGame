@@ -68,5 +68,8 @@ wall3 = Wall(x=600, y=300)
 all_sprites = pygame.sprite.Group()
 all_sprites.add(player, wall1, wall2, wall3)
 
+# Game loop
+
+
 # CONSTANTS
 GAME_TITLE = "Welcome to my World"
