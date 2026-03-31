@@ -47,7 +47,13 @@ while running:
     # moving both squares 
     red_x += RED_SPEED_PIXELS
     
-    green_x +=GREEN_SPEED_PPS * delta
+    green_x +=GREEN_SPEED_PPS * delta       #--> moves 200 pixels per real second
     
     if red_x > SCREEN_WIDTH:
-        red_x = -S
+        red_x = -SQUARE_SIZE
+    if green_x > SCREEN_WIDTH:
+        green_x = -SQUARE_SIZE
+    
+    screen.fill(BLACK)
+    
+    
