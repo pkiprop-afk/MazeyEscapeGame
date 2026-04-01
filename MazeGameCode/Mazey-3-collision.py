@@ -70,4 +70,5 @@ class Wall(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
-        
+        self.default_color = GRAY
+        self.image.fill(self.default_color)
