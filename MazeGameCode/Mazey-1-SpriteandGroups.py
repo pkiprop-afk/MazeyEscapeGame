@@ -85,7 +85,7 @@ while running:
     
     all_sprites.draw(screen)
     
-    info1 = font.render("BLUE = Player Sprite | GRAY = Wall Sprites", True, WHITE)
+    info1 = font.render("BLUE = Player | GRAY = Wall", True, WHITE)
     info2 = font.render("Press Enter to Start", True, WHITE)
     screen.blit(info1, (20, 20))
     screen.blit(info2, (20, 50))
