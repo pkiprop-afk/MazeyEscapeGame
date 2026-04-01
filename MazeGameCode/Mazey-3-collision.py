@@ -30,8 +30,6 @@ class Player(pygame.sprite.Sprite):
         self.rect.topleft = (x, y)
         self.speed = PLAYER_SPEED 
     
-    def collision(player_collision):
-        pass
         
     
     def update(self, delta, walls):
