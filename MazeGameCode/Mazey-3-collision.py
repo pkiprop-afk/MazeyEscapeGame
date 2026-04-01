@@ -123,4 +123,25 @@ for (col, row) in wall_positions:
     wall = Wall(col * TILE_SIZE, row *  TILE_SIZE)
     walls.add(wall)
     all_sprites.add(wall)
+
+all_sprites.add(goal, player)
+
+running = True
+goal_reached = False 
+
+while running:
+    clock.tick(MAX_FPS)
+    delta = clock.get_time()/1000.0
     
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    
+    player.update(delta, walls)
+    
+    for wall in walls:
+        wall.set_highlighted(False)
+    
+    touching_walls = pygame.sprite.spritecollide(player, walls, False)
+    for wall in touching_walls:
+        wall.set_highlighted(True)
