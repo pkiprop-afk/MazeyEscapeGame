@@ -104,4 +104,6 @@ font_small = pygame.font.SysFont("Arial", 18)
 player = Player(x=80, y=80)
 goal = Goal(x=680, y=480)
 
-            
+wall_positions = [
+    (2,1), (3,1), 
+]
