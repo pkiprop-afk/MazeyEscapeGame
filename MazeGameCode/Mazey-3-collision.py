@@ -99,5 +99,6 @@ screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption(TITLE)
 clock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 22, bold=True)
+font_small = pygame.font,SysFont("Arial", 18)
 
             
