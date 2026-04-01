@@ -97,6 +97,7 @@ class Goal(pygame.sprite.Sprite):
 pygame.init()
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption(TITLE)
-clock = pygame.font.SysFont("Arial", 22, bold=True)
+clock = pygame.time.Clock()
+font = pygame.font.SysFont("Arial", 22, bold=True)
 
             
