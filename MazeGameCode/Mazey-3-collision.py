@@ -88,5 +88,9 @@ class Wall(pygame.sprite.Sprite):
 class Goal(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super().__init__()
-        self.image
+        self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
+        self.image.fill(DARK_GREEN)
+        pygame.draw.rect(self.image, GREEN, self.image.get_rect(), 4)
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
             
