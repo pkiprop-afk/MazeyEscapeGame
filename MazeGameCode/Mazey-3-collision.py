@@ -154,8 +154,10 @@ while running:
     
     screen.blit(font_small.render("Arrow Keys to move", True, WHITE), (20, 20 ))
     screen.blit(font_small.render("RED walls = collision active", True, RED), (20, 45))
-    screen.blit(font_small.render("Reach the green square", True))
+    screen.blit(font_small.render("Reach the green square", True, GREEN), (20, 70))
     
+    
+        
 pygame.quit()
 sys.exit()
     
