@@ -145,3 +145,5 @@ while running:
     touching_walls = pygame.sprite.spritecollide(player, walls, False)
     for wall in touching_walls:
         wall.set_highlighted(True)
+    
+    
