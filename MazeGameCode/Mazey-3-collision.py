@@ -30,6 +30,10 @@ class Player(pygame.sprite.Sprite):
         self.rect.topleft = (x, y)
         self.speed = PLAYER_SPEED 
     
+    def collision(player_collision):
+        pass
+        
+    
     def update(self, delta, walls):
         """ 
         Moves players with arrow keys and wall collisions.
@@ -84,6 +88,8 @@ class Wall(pygame.sprite.Sprite):
             color = RED
         else:
             self.default_color
+    
+    
     
 class Goal(pygame.sprite.Sprite):
     def __init__(self, x, y):
