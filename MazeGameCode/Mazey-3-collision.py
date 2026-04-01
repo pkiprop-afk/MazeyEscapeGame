@@ -156,7 +156,9 @@ while running:
     screen.blit(font_small.render("RED walls = collision active", True, RED), (20, 45))
     screen.blit(font_small.render("Reach the green square", True, GREEN), (20, 70))
     
-    
+    if goal_reached:
+        msg = font.render("GOAL REACHED! - rect.colliderect() fired!", True, YELLOW)
+        msg_rect = msg.get_rect(center=(SCREEN_WIDTH))
         
 pygame.quit()
 sys.exit()
