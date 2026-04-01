@@ -115,3 +115,12 @@ wall_positions = [
     (8,4), (8,5), (8,6),
     (5,6), (6,6), (7,6),
 ]
+
+walls = pygame.sprite.Group()
+all_sprites = pygame.sprite.Group()
+
+for (col, row) in wall_positions:
+    wall = Wall(col * TILE_SIZE, row *  TILE_SIZE)
+    walls.add(wall)
+    all_sprites.add(wall)
+    
