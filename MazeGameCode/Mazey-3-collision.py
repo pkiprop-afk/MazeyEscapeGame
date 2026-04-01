@@ -65,3 +65,7 @@ class Player(pygame.sprite.Sprite):
         
         # keeping player inside boundary
         self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
+
+class Wall(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init()
