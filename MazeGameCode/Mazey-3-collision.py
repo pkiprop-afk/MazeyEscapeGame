@@ -158,7 +158,9 @@ while running:
     
     if goal_reached:
         msg = font.render("GOAL REACHED! - rect.colliderect() fired!", True, YELLOW)
-        msg_rect = msg.get_rect(center=(SCREEN_WIDTH))
+        msg_rect = msg.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2))
+        pygame.draw.rect(screen, BLACK, msg_rect.inflate(20, 10))
+        screen.blit(msg, msg_rect)
         
 pygame.quit()
 sys.exit()
