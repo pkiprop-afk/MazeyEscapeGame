@@ -80,4 +80,9 @@ class Wall(pygame.sprite.Sprite):
         """ 
         Changes color to red when the player is touching the wall
         """
+        if highlighted:
+            color = RED
+        else:
+            self.default_color
         
+            
