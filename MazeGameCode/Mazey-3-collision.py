@@ -93,4 +93,10 @@ class Goal(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, GREEN, self.image.get_rect(), 4)
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
+
+pygame.init()
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+pygame.display.set_caption(TITLE)
+clock = pygame.font.SysFont("Arial", 22, bold=True)
+
             
