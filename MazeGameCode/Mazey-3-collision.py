@@ -142,12 +142,17 @@ while running:
     for wall in walls:          # --> Reset all wall highlights each frame
         wall.set_highlighted(False)
     
-    touching_walls = pygame.sprite.spritecollide(player, walls, False)
+    touching_walls = pygame.sprite.spritecollide(player, walls, False)      #--> Highlights walls touched by the frames
     for wall in touching_walls:
         wall.set_highlighted(True)
     
     if player.rect.colliderect(goal.rect):      #--> Check if player reached the goal
         goal_reached = True
+    
+    screen.fill(BLACK)
+    all_sprites.draw(screen)
+    
+    
     
     
     
