@@ -152,7 +152,8 @@ while running:
     screen.fill(BLACK)
     all_sprites.draw(screen)
     
-    
+pygame.quit()
+sys.exit()
     
     
     
