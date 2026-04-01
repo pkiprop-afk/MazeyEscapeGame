@@ -139,7 +139,7 @@ while running:
     
     player.update(delta, walls)
     
-    for wall in walls:
+    for wall in walls:          # --> Reset all wall highlights each frame
         wall.set_highlighted(False)
     
     touching_walls = pygame.sprite.spritecollide(player, walls, False)
