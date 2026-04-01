@@ -86,6 +86,7 @@ class Wall(pygame.sprite.Sprite):
             self.default_color
     
 class Goal(pygame.sprite.Sprite):
-    def __init__(self, *groups):
-        super().__init__(*groups)
+    def __init__(self, x, y):
+        super().__init__()
+        self.image
             
