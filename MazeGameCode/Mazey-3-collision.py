@@ -146,4 +146,9 @@ while running:
     for wall in touching_walls:
         wall.set_highlighted(True)
     
+    if player.rect.colliderect(goal.rect):      #--> Check if player reached the goal
+        goal_reached = True
+    
+    
+    
     
