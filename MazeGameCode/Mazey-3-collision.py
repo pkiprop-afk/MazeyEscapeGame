@@ -101,6 +101,7 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 22, bold=True)
 font_small = pygame.font.SysFont("Arial", 18)
 
-spr
+player = Player(x=80, y=80)
+goal = Goal(x=680, y=480)
 
             
