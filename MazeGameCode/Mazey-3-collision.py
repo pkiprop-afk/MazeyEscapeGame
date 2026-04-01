@@ -75,4 +75,9 @@ class Wall(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, (80, 80, 80), self.image.get_rect(), 3)
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
+
+    def set_highlighted(self, highlighted):
+        """ 
+        Changes color to red when the player is touching the wall
+        """
         
