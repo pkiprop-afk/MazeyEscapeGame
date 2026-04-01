@@ -73,3 +73,5 @@ class Wall(pygame.sprite.Sprite):
         self.default_color = GRAY
         self.image.fill(self.default_color)
         pygame.draw.rect(self.image, (80, 80, 80), self.image.get_rect(), 3)
+        self.rect = self.image.get_rect()
+        self.rect.topleft
