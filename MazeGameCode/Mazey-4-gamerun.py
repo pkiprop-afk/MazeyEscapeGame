@@ -216,3 +216,5 @@ class Game:
                         # Transition from winning/gameover to reset
                         self._reset()
                         self.state = STATE_PLAYING
+            
+            # only runs when playing
