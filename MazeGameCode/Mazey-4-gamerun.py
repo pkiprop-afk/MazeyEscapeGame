@@ -150,6 +150,6 @@ class Game:
             self.goal = Goal(x=680, y=500)
             
             wall_grid = [
-                
+                (3,1)
             ]
         
