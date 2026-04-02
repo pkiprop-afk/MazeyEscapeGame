@@ -135,3 +135,10 @@ class Game:
         pygame.display.set_caption(TITLE)
         self.clock = pygame.time.Clock()
         
+        # fonts
+        self.font_title = pygame.font.SysFont("Arial", 64, bold=True)
+        self.font_medium = pygame.font.SysFont("Arial", 36, bold=True)
+        self.font_small = pygame.font.SysFont("Arial", 22)
+        
+        
+        
