@@ -142,4 +142,11 @@ class Game:
         
         self._build_level()
         
+        self.state = STATE_TITLE
+        
+        def _build_level(self):
+            self.player = Player()
+            self.enemy = Enemy()
+            self.goal = Goal(x=680, y=500)
+            
         
