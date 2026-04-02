@@ -239,3 +239,12 @@ class Game:
                 )
             else:
                 self.all_sprites.draw(self.screen)
+                
+                state_names = {
+                    STATE_PLAYING:  ("STATE: PLAYING", GREEN),
+                    STATE_WIN: ("STATE:WIN", YELLOW),
+                    STATE_GAMEOVER: ("STATE:GAMEOVER", RED),
+                }
+                label, color = state_names.get(self.state, ("", WHITE))
+                self.screen.blit(self.font_small.render(label, True, color), (20, 20))
+                self.screen.blit(self.font_small.render(""))
