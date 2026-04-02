@@ -81,4 +81,9 @@ class Enemy(pygame.sprite.Sprite):
         super().__init__()
         self.image.fill(RED)
         self.rect = self.image.get_rect()
-        self.reset
+        self.reset()
+    
+    def reset(self):
+        """
+        
+        """
