@@ -235,4 +235,5 @@ class Game:
                 self._draw_overlay(
                     "MAZE GAME",
                     YELLOW,
+                    "Use Arrow Keys to move | Reach the"
                 )
