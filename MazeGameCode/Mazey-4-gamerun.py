@@ -75,3 +75,4 @@ class Player(pygame.sprite.Sprite):
 
 class Enemy(pygame.sprite.Sprite):
     START_X = 680
+    START_Y = 300
