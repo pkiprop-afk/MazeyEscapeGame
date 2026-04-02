@@ -70,4 +70,4 @@ class Player(pygame.sprite.Sprite):
                 self.rect.bottom = wall.rect.top 
             if keys[pygame.K_UP]:
                 self.rect.top = wall.rect.bottom
-                
+        
