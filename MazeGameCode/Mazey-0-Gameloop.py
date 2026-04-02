@@ -43,4 +43,4 @@ while running:
     pygame.display.flip()
 
 pygame.quit()   #--> teardown
-sys.exit
+sys.exit()
