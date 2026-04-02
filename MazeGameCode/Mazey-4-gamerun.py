@@ -85,5 +85,5 @@ class Enemy(pygame.sprite.Sprite):
     
     def reset(self):
         """
-        
+        Returns enemy to starting positions
         """
