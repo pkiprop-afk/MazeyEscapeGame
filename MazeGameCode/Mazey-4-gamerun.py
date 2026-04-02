@@ -140,5 +140,6 @@ class Game:
         self.font_medium = pygame.font.SysFont("Arial", 36, bold=True)
         self.font_small = pygame.font.SysFont("Arial", 22)
         
+        self._build_level()
         
         
