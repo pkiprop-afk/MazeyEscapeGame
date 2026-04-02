@@ -149,4 +149,7 @@ class Game:
             self.enemy = Enemy()
             self.goal = Goal(x=680, y=500)
             
+            wall_grid = [
+                
+            ]
         
