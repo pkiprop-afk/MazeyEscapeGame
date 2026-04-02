@@ -169,4 +169,7 @@ class Game:
                 self.all_sprites.add(w)
             
         self._build_level()
+        
+        self.enemies.add(self.enemy)
+        self.all_sprites.add(self.goal, self.enemy, self.player)
             
