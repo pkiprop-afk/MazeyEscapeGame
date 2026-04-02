@@ -231,9 +231,11 @@ class Game:
             
             self.screen.fill(BLACK)
             
-            if self.state == STATE_TITLE:
+            if self.state == STATE_TITLE:   #--> Title screen
                 self._draw_overlay(
                     "MAZE GAME",
                     YELLOW,
-                    "Use Arrow Keys to move | Reach the"
+                    "Use Arrow Keys to move | Reach the GREEN square | Avoid RED | Press Enter to Start"
                 )
+            else:
+                self.all_sprites.draw(self.screen)
