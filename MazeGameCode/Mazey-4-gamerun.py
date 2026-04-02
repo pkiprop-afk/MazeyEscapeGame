@@ -27,4 +27,36 @@ DARK_GREEN = (0, 140, 0)
 PLAYER_SPEED = 220
 ENEMY_SPEED = 160
 
-
+class Player(pygame.sprite.Sprite):
+    # Starting positions
+    START_X = 80
+    START_Y = 80
+    
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))
+        self.image.fill(BLUE)
+        self.rect = self.image.get_rect()
+        self.reset()
+    
+    def reset(self):
+        """ 
+        Returns player to starting position
+        """
+        self.rect.topleft = (self.START_X, self.START_Y)
+    
+    def update(self, delta, walls):
+        keys = pygame.key.get_pressed()
+        
+        # Horizontal movement
+        if keys[pygame.K_LEFT]:
+            self.rect.x -=int(PLAYER_SPEED * delta)
+        if keys[pygame.K_RIGHT]:
+            self.rect.x += int(PLAYER_SPEED * delta)
+        
+        for wall in pygame.sprite.spritecollide(self, walls, False):
+            if keys[pygame.K_RIGHT]:
+                self.rect.right = wall.rect.left
+            if keys[pygame.K_LEFT]:
+                self.rect.left = wall.rect.right
+        
