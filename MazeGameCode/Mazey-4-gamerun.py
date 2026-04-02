@@ -130,7 +130,7 @@ class Goal(pygame.sprite.Sprite):
         self.rect.topleft = (x, y)
 
 class Game:
-    def __int__(self):
+    def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         pygame.display.set_caption(TITLE)
