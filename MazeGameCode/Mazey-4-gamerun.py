@@ -256,11 +256,10 @@ class Game:
                 elif self.state == STATE_GAMEOVER:
                     self._draw_overlay("GAME OVER", RED, "Press ENTER to try again")
         
-        pygame.display.flip()
-
-pygame.quit()
-sys.exit()
+            pygame.display.flip()
 
 if __name__ == "__main__":
     game = Game()
     game.run()
+pygame.quit()
+sys.exit()
