@@ -166,7 +166,7 @@ while running:
         pygame.draw.rect(screen, BLACK, msg_rect.inflate(20, 10))
         screen.blit(msg, msg_rect)
         
-        pygame.display.flip()
+    pygame.display.flip()
         
 pygame.quit()
 sys.exit()
