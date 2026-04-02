@@ -92,5 +92,6 @@ class Enemy(pygame.sprite.Sprite):
     
     def update(self, delta, walls):
         """ 
-        Bouncing of walls and 
+        Bouncing of walls and screen edges
         """
+        
