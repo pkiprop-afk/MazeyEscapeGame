@@ -74,4 +74,4 @@ class Player(pygame.sprite.Sprite):
         self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
 
 class Enemy(pygame.sprite.Sprite):
-    
+    START_X = 680
