@@ -250,5 +250,12 @@ class Game:
                 self.screen.blit(self.font_small.render("Arrow Keys to move", True, WHITE), (20, 50))
                 
                 if self.state == STATE_WIN:
-                    self._draw_overlay("YOU WIN!", GREEN, "Press Enter to Play Again")
-                    
+                    self._draw_overlay("YOU WIN!", GREEN, "Press ENTER to Play Again")
+                
+                elif self.state == STATE_GAMEOVER:
+                    self._draw_overlay("GAME OVER", RED, "Press ENTER to try again")
+        
+        pygame.display.flip()
+
+pygame.quit()
+sys.exit()
