@@ -202,17 +202,17 @@ class Game:
         while running:
             self.clock.tick(MAX_FPS)
             delta = self.clock.get_time() / 1000.0
-            
+
             # event handling
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
                     running = False
-                
+
                 if event.type == pygame.KEYDOWN and event.key == pygame.K_RETURN:
                     if self.state == STATE_TITLE:
                         self.state = STATE_PLAYING      #--> Transition from screen title to playing
-                    
-                    elif self.state == STATE_WIN or self.state == STATE_GAMEOVER:
+
+                    elif self.state in [STATE_WIN, STATE_GAMEOVER]:
                         # Transition from winning/gameover to reset
                         self._reset()
                         self.state = STATE_PLAYING
