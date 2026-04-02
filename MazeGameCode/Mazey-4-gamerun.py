@@ -71,3 +71,6 @@ class Player(pygame.sprite.Sprite):
             if keys[pygame.K_UP]:
                 self.rect.top = wall.rect.bottom
         
+        self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
+
+
