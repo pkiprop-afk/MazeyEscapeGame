@@ -172,4 +172,24 @@ class Game:
         
         self.enemies.add(self.enemy)
         self.all_sprites.add(self.goal, self.enemy, self.player)
-            
+        
+    def _reset(self):
+        """ 
+        resets for starting positions for a new round
+        """
+        self.player.reset()
+        self.enemy.reset()
+    
+    def _draw_overlay(self, heading, heading_color, subtitle):
+        """ 
+        This draws a semi-transparent overlay with a centered text for non-play screens.
+        """
+        overlay = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
+        overlay.fill((0, 0, 0, 170))
+        self.screen.blit(overlay, (0,0))
+        
+        h_surf = self.font_title.render(heading, True, heading_color)
+        h_rect = h_surf.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 -60))
+        self.screen.blit(s_surf, s_rect)
+    
+    
