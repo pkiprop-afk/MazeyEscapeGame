@@ -106,4 +106,6 @@ class Enemy(pygame.sprite.Sprite):
             
             # prevent sticking
             if self._vel_x > 0:
-                
+                self.rect.left = wall.rect.right
+            else:
+                self.rect.right = wall.rect.left
