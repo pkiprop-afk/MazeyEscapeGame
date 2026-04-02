@@ -127,4 +127,8 @@ class Goal(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, GREEN, self.image.get_rect(), 4)
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
-        
+
+class Game:
+    def __int__(self):
+        pygame.init()
+        self.screen = pygame.display.set_mode
