@@ -67,4 +67,7 @@ class Player(pygame.sprite.Sprite):
         
         for wall in pygame.sprite.spritecollide(self, walls, False):
             if keys[pygame.K_DOWN]:
-                self.rect.bottom
+                self.rect.bottom = wall.rect.top 
+            if keys[pygame.K_UP]:
+                self.rect.top = wall.rect.bottom
+                
