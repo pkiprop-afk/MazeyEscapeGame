@@ -247,4 +247,8 @@ class Game:
                 }
                 label, color = state_names.get(self.state, ("", WHITE))
                 self.screen.blit(self.font_small.render(label, True, color), (20, 20))
-                self.screen.blit(self.font_small.render(""))
+                self.screen.blit(self.font_small.render("Arrow Keys to move", True, WHITE), (20, 50))
+                
+                if self.state == STATE_WIN:
+                    self._draw_overlay("YOU WIN!", GREEN, "Press Enter to Play Again")
+                    
