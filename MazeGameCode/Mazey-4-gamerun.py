@@ -222,4 +222,5 @@ class Game:
                 self.player.update(delta, self.walls)
                 self.enemy.update(delta, self.walls)
             
+                # checking winning condition
                 
