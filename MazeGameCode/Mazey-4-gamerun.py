@@ -145,31 +145,31 @@ class Game:
         self.state = STATE_TITLE
         self._build_level()
         
-        def _build_level(self):
-            self.player = Player()
-            self.enemy = Enemy()
-            self.goal = Goal(x=680, y=500)
-            
-            wall_grid = [
-                (3,1), (4,1), (5,1), (6,1),
-                (3,2),
-                (3,3), (4,3), (5,3),
-                (5,4), (5,5),
-                (2,5), (3,5),
-                (8,2), (8,3), (8,4),
-                (7,4), (6,4),
-                (10, 1), (10, 2), (10, 3), (10, 4),
+    def _build_level(self):
+        self.player = Player()
+        self.enemy = Enemy()
+        self.goal = Goal(x=680, y=500)
+        
+        wall_grid = [
+            (3,1), (4,1), (5,1), (6,1),
+            (3,2),
+            (3,3), (4,3), (5,3),
+            (5,4), (5,5),
+            (2,5), (3,5),
+            (8,2), (8,3), (8,4),
+            (7,4), (6,4),
+            (10, 1), (10, 2), (10, 3), (10, 4),
             ]
             
-            self.walls = pygame.sprite.Group()
-            self.enemies = pygame.sprite.Group()
-            self.all_sprites = pygame.sprite.Group()
+        self.walls = pygame.sprite.Group()
+        self.enemies = pygame.sprite.Group()
+        self.all_sprites = pygame.sprite.Group()
             
-            for (col, row) in wall_grid:
-                w = Wall(col * TILE_SIZE, row * TILE_SIZE)
-                self.walls.add(w)
-                self.all_sprites.add(w)
-            
+        for (col, row) in wall_grid:
+            w = Wall(col * TILE_SIZE, row * TILE_SIZE)
+            self.walls.add(w)
+            self.all_sprites.add(w)
+        
         
         self.enemies.add(self.enemy)
         self.all_sprites.add(self.goal, self.enemy, self.player)
