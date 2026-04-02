@@ -143,6 +143,7 @@ class Game:
         
         
         self.state = STATE_TITLE
+        self._build_level()
         
         def _build_level(self):
             self.player = Player()
@@ -169,7 +170,6 @@ class Game:
                 self.walls.add(w)
                 self.all_sprites.add(w)
             
-        self._build_level()
         
         self.enemies.add(self.enemy)
         self.all_sprites.add(self.goal, self.enemy, self.player)
