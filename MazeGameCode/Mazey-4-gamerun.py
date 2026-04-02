@@ -109,3 +109,8 @@ class Enemy(pygame.sprite.Sprite):
                 self.rect.left = wall.rect.right
             else:
                 self.rect.right = wall.rect.left
+        
+class Wall(pygame.sprite.Sprite):
+    def __init__(self, x, y):
+        super().__init__()
+        self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
