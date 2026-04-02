@@ -61,4 +61,6 @@ class Player(pygame.sprite.Sprite):
                 self.rect.left = wall.rect.right
         
         if keys[pygame.K_UP]:
-            self.rect.y
+            self.rect.y -=(PLAYER_SPEED * delta)
+        if keys[pygame.K_DOWN]:
+            self.rect.y += int(PLAYER_SPEED * delta)
