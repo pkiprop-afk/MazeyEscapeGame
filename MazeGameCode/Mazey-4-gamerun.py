@@ -99,3 +99,11 @@ class Enemy(pygame.sprite.Sprite):
         # Bouncing screen edges
         if self.rect.left <= 0 or self.rect.right >= SCREEN_WIDTH:
             self._vel_x *= -1
+        
+        # Bouncing of walls
+        for wall in pygame.sprite.spritecollide(self, walls, False):
+            self._vel_x *= -1
+            
+            # prevent sticking
+            if self._vel_x > 0:
+                
