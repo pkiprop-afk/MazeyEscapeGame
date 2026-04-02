@@ -87,3 +87,7 @@ class Enemy(pygame.sprite.Sprite):
         """
         Returns enemy to starting positions
         """
+        self.rect.topleft = (self.START_X, self.START_Y)
+        self._vel_x = - ENEMY_SPEED
+    
+    
