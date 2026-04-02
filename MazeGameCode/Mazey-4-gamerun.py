@@ -140,7 +140,6 @@ class Game:
         self.font_medium = pygame.font.SysFont("Arial", 36, bold=True)
         self.font_small = pygame.font.SysFont("Arial", 22)
         
-        self._build_level()
         
         self.state = STATE_TITLE
         
@@ -160,4 +159,14 @@ class Game:
                 (10, 1), (10, 2), (10, 3), (10, 4),
             ]
             
+            self.walls = pygame.sprite.Group()
+            self.enemies = pygame.sprite.Group()
+            self.all_sprites = pygame.sprite.Group()
+            
+            for (col, row) in wall_grid:
+                w = Wall(col * TILE_SIZE, row * TILE_SIZE)
+                self.walls.add(w)
+                self.all_sprites.add(w)
+            
+        self._build_level()
             
