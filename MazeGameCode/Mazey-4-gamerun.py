@@ -131,4 +131,7 @@ class Goal(pygame.sprite.Sprite):
 class Game:
     def __int__(self):
         pygame.init()
-        self.screen = pygame.display.set_mode
+        self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+        pygame.display.set_caption(TITLE)
+        self.clock = pygame.time.Clock()
+        
