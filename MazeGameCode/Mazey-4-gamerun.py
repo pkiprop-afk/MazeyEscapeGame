@@ -218,3 +218,8 @@ class Game:
                         self.state = STATE_PLAYING
             
             # only runs when playing
+            if self.state == STATE_PLAYING:
+                self.player.update(delta, self.walls)
+                self.enemy.update(delta, self.walls)
+            
+                
