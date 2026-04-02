@@ -213,6 +213,6 @@ class Game:
                         self.state = STATE_PLAYING      #--> Transition from screen title to playing
                     
                     elif self.state == STATE_WIN or self.state == STATE_GAMEOVER:
-                        # Transition from winning/gameover
+                        # Transition from winning/gameover to reset
                         self._reset()
                         self.state = STATE_PLAYING
