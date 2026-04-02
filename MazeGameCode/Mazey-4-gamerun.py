@@ -193,6 +193,7 @@ class Game:
         self.screen.blit(h_surf, h_rect)
         
         s_surf = self.font_small.render(subtitle, True, WHITE)
-        s_rect = s_surf.get_rect
+        s_rect = s_surf.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 20))
+        
     
     
