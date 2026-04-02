@@ -231,3 +231,8 @@ class Game:
             
             self.screen.fill(BLACK)
             
+            if self.state == STATE_TITLE:
+                self._draw_overlay(
+                    "MAZE GAME",
+                    YELLOW,
+                )
