@@ -223,4 +223,11 @@ class Game:
                 self.enemy.update(delta, self.walls)
             
                 # checking winning condition
+                if self.player.rect.colliderect(self.goal.rect):
+                    self.state = STATE_WIN
                 
+                if pygame.sprite.spritecollide(self.player, self.enemies, False):
+                    self.state = STATE_GAMEOVER
+            
+            self.screen.fill(BLACK)
+            
