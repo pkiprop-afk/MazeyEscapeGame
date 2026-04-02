@@ -90,4 +90,7 @@ class Enemy(pygame.sprite.Sprite):
         self.rect.topleft = (self.START_X, self.START_Y)
         self._vel_x = - ENEMY_SPEED
     
-    
+    def update(self, delta, walls):
+        """ 
+        Bouncing of walls and 
+        """
