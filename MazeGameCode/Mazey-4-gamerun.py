@@ -94,4 +94,4 @@ class Enemy(pygame.sprite.Sprite):
         """ 
         Bouncing of walls and screen edges
         """
-        
+        self.rect.x += int(self._vel_x * delta)
