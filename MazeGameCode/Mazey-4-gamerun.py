@@ -60,3 +60,4 @@ class Player(pygame.sprite.Sprite):
             if keys[pygame.K_LEFT]:
                 self.rect.left = wall.rect.right
         
+        
