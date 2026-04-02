@@ -79,7 +79,7 @@ class Enemy(pygame.sprite.Sprite):
     
     def __init__(self):
         super().__init__()
-        self.image = pygame.Surface()
+        self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
         self.image.fill(RED)
         self.rect = self.image.get_rect()
         self.reset()
