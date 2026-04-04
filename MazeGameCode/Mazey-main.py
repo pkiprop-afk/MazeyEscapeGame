@@ -51,3 +51,5 @@ DIFFICULTY = {
     "HARD": {"time": 75, "patrol":3, "guards":2, "speed":180},
     "VETERAN": {"time":45, "patrol":5, "guards":2, "speed":160},
 }
+
+# POWER UP TYPES
