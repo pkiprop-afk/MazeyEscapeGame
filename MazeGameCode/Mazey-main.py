@@ -49,5 +49,5 @@ TILE_SIZE = 40
 DIFFICULTY = {
     "EASY": {"time":120, "patrol":2, "guards":1, "speed":200},
     "HARD": {"time": 75, "patrol":3, "guards":2, "speed":180},
-    "VETERAN": {"time":45, "patrol":5, "guards":2, "speed":}
+    "VETERAN": {"time":45, "patrol":5, "guards":2, "speed":160},
 }
