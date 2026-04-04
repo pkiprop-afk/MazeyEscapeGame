@@ -47,5 +47,7 @@ TILE_SIZE = 40
 
 # Difficulty settings for game
 DIFFICULTY = {
-    "EASY": {"time":120, "patrol":2, "guards":1, "speed":200}
+    "EASY": {"time":120, "patrol":2, "guards":1, "speed":200},
+    "HARD": {"time": 75, "patrol":3, "guards":2, "speed":180},
+    "VETERAN": {"time":45, "patrol":5, "guards":2, "speed":}
 }
