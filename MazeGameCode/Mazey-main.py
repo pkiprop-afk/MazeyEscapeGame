@@ -46,3 +46,6 @@ STATE_DIFFICULT = 5
 TILE_SIZE = 40
 
 # Difficulty settings for game
+DIFFICULTY = {
+    "EASY": {"time":120, "patrol":2, "guards":1, "speed":200}
+}
