@@ -43,3 +43,6 @@ STATE_GAMEOVER = 3
 STATE_LOADING = 4
 STATE_DIFFICULT = 5
 
+TILE_SIZE = 40
+
+# Difficulty settings for game
