@@ -118,5 +118,9 @@ class Player(pygame.sprite.Sprite):
         # For power ups
         self.activate_powerup = None
         self.powerup_timer = 0.0
+        self.weapon = None
+        self.bullets = 0
+        self.slow_time = False
+        self.speed_boost = False
         
         
