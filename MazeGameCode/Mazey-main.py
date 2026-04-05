@@ -202,4 +202,8 @@ class Player(pygame.sprite.Sprite):
             self.activate_powerup = pu_type
             self.powerup_timer = 8.0
         
-        
+        elif pu_type == PU_SPEED_UP:
+            self.speed = self.base_speed * 1.8
+            self.speed_boost = True
+            self.activate_powerup = pu_type
+            self.powerup_timer = 6.0
