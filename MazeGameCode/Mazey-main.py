@@ -93,4 +93,6 @@ class Goal(pygame.sprite.Sprite):
         self._anim_timer = 0
         self._draw(0)
         self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        
         
