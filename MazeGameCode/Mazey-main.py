@@ -115,6 +115,6 @@ class Player(pygame.sprite.Sprite):
         self.flash_radius = FLASH_RADIUS
         self.flash_battery = 1.0
         
-        # For powerups
+        # For power ups
         
         
