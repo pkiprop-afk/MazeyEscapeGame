@@ -126,5 +126,14 @@ class Player(pygame.sprite.Sprite):
         # For facing the direction for shooting
         self.facing = pygame.math.Vector2(1,0)
         
-        
+        # Pixel art for player character
+    def _draw_sprite(self):
+        self.image.fill((0, 0, 0, 0))
+        w = TILE_SIZE - 6
+        pygame.draw.rect(self.image, PLAYER_COL, (w // 4, w // 3, w // 2, w // 2))
+        pygame.draw.rect(self.image, PLAYER_COL, (w // 3, 2, w // 3, w // 4))
+        pygame.draw.rect(self.image, PLAYER_EYE, (w // 3 + 2, 4, 3, 3))
+        pygame.draw.rect(self.image, PLAYER_EYE, (w // 3 + w // 3 - 4, 4, 3, 3))
+        pygame.draw.rect(self.image, PLAYER_COL, (w // 4, w // 3 + w // 2, w // 5, w // 5))
+        pygame.draw.rect(self.image, PLAYER_COL, (w // 4 + w // 3, w // 3 + w // 2, w // 5, w // 5))
         
