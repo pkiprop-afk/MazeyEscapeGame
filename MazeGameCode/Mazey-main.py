@@ -74,3 +74,8 @@ PU_COLORS = {
 FLASH_RADIUS = 160
 FLASH_RADIUS_MIN = 60
 
+
+class Wall(pygame.sprite.Sprite):
+    def __init__(self,x ,y):
+        super().__init__()
+        self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
