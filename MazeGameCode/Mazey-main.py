@@ -197,15 +197,14 @@ class Player(pygame.sprite.Sprite):
         self.activate_powerup = None
     
     def apply_powerup(self, pu_type, enemies):
+        # sourcery skip: extract-duplicate-method, inline-immediately-returned-variable, move-assign-in-block
         if pu_type == PU_SLOW_TIME:
-            self.slow_time = self._extracted_from_apply_powerup_3(pu_type, 8.0)
+            self.slow_time = True
+            self.activate_powerup = pu_type
+            self.powerup_timer = 8.0
+        
         elif pu_type == PU_SPEED_UP:
             self.speed = self.base_speed * 1.8
-            self.speed_boost = self._extracted_from_apply_powerup_3(pu_type, 6.0)
-
-    # TODO Rename this here and in `apply_powerup`
-    def _extracted_from_apply_powerup_3(self, pu_type, arg1):
-        self.activate_powerup = pu_type
-        self.powerup_timer = arg1
-
-        return True
+            self.speed_boost = True
+            self.activate_powerup = pu_type
+            self.powerup_timer = 6.0
