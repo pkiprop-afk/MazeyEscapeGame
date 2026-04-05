@@ -116,5 +116,7 @@ class Player(pygame.sprite.Sprite):
         self.flash_battery = 1.0
         
         # For power ups
+        self.activate_powerup = None
+        self.powerup_timer = 0.0
         
         
