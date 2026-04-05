@@ -233,4 +233,6 @@ class Bullet(pygame.sprite.Sprite):
         self.image = pygame.Surface((6, 6), pygame.SRCALPHA)
         pygame.draw.circle(self.image, YELLOW, (3, 3), 3)
         self.rect = self.image.get_rect(center=(x, y))
-        self.vel = direction * self.SPEED    
+        self.vel = direction * self.SPEED
+        self._fx = float(self.rect.x)
+        self._fy = float    
