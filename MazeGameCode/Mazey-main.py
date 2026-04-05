@@ -136,4 +136,7 @@ class Player(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, PLAYER_EYE, (w // 3 + w // 3 - 4, 4, 3, 3))
         pygame.draw.rect(self.image, PLAYER_COL, (w // 4, w // 3 + w // 2, w // 5, w // 5))
         pygame.draw.rect(self.image, PLAYER_COL, (w // 4 + w // 3, w // 3 + w // 2, w // 5, w // 5))
+    
+    def _draw_sprite(self):
+        self.rect.topleft = (self.START_X, self.START_Y)
         
