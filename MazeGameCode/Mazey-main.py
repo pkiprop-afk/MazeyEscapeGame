@@ -84,3 +84,5 @@ class Wall(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, WALL_LIGHT, (0, 0, 2, TILE_SIZE))
         pygame.draw.rect(self.image, (20, 20, 30), (0, TILE_SIZE - 2, TILE_SIZE, 2))
         pygame.draw.rect(self.image, (20, 20, 30), (TILE_SIZE-2, 0, 2, TILE_SIZE))
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
