@@ -108,5 +108,7 @@ class Player(pygame.sprite.Sprite):
         self._draw_sprite()
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
-        Player
+        Player.START_X = x
+        Player.START_Y = y
+        
         
