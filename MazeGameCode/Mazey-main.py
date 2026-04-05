@@ -111,4 +111,5 @@ class Player(pygame.sprite.Sprite):
         Player.START_X = x
         Player.START_Y = y
         
+        #Flashlight
         
