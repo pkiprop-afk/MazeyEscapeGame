@@ -123,4 +123,6 @@ class Player(pygame.sprite.Sprite):
         self.slow_time = False
         self.speed_boost = False
         
+        # For facing the direction for shooting
+        
         
