@@ -225,4 +225,11 @@ class Player(pygame.sprite.Sprite):
         elif pu_type == PU_AUTO_WIN:
             pass
     
+class Bullet(pygame.sprite.Sprite):
+    SPEED = 500
     
+    def __init__(self, x, y, direction):
+        super().__init__()
+        self.image = pygame.Surface((6, 6), pygame.SRCALPHA)
+        pygame.draw.circle(self.image, YELLOW, (3, 3), 3)
+        self.rect = self.image.get_rect(center)    
