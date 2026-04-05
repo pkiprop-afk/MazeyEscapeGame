@@ -187,4 +187,7 @@ class Player(pygame.sprite.Sprite):
             if self.powerup_timer <= 0:
                 self._expire_powerup()
     
-    
+    # power up expire
+    def _expire_powerup(self):
+        if self.activate_powerup == PU_SLOW_TIME:
+            self.slow_time = False
