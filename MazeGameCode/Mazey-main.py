@@ -213,5 +213,16 @@ class Player(pygame.sprite.Sprite):
             self.weapon = random.choice(PU_WEAPON)
             self.bullets = PU_WEAPON[self.weapon]
         
+        elif pu_type == PU_TELEPORT:
+            pass
         
-            
+        elif pu_type == PU_FREEZE:
+            for enemy in enemies:
+                enemy.freeze(5.0)
+            self.activate_powerup = pu_type
+            self.powerup_timer = 5.0
+        
+        elif pu_type == PU_AUTO_WIN:
+            pass
+    
+    
