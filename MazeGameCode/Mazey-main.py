@@ -140,3 +140,4 @@ class Player(pygame.sprite.Sprite):
     def _draw_sprite(self):
         self.rect.topleft = (self.START_X, self.START_Y)
         
+        
