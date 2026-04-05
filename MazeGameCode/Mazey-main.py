@@ -102,8 +102,6 @@ class Player(pygame.sprite.Sprite):
     
     def __init__(self, x, y, speed ):
         super().__init__()
-        self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))
-        self.image.fill(BLUE)
-        self.rect = self.image.get_rect()
-        self.reset()
-        
+        self.base_speed = speed
+        self.speed = speed
+        self.image = pygame.Surface((TILE_SIZE - 6, ))
