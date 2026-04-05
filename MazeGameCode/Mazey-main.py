@@ -208,3 +208,7 @@ class Player(pygame.sprite.Sprite):
             self.speed_boost = True
             self.activate_powerup = pu_type
             self.powerup_timer = 6.0
+        
+        elif pu_type == PU_WEAPON:
+            self.weapon = random.choice(WEAPONS)
+            
