@@ -137,7 +137,46 @@ class Player(pygame.sprite.Sprite):
         pygame.draw.rect(self.image, PLAYER_COL, (w // 4, w // 3 + w // 2, w // 5, w // 5))
         pygame.draw.rect(self.image, PLAYER_COL, (w // 4 + w // 3, w // 3 + w // 2, w // 5, w // 5))
     
-    def _draw_sprite(self):
+    def reset(self):
         self.rect.topleft = (self.START_X, self.START_Y)
+        self.flash_battery = 1.0
+        self.flash_radius = FLASH_RADIUS
+        self.activate_powerup = None
+        self.powerup_timer = 0.0
+        self.weapon = None
+        self.bullets = 0
+        self.slow_time = False
+        self.speed_boost = False
+        self.speed = self.base_speed
         
+    def update(self, delta, walls):
+        keys = pygame.key.get_pressed()
         
+        if keys[pygame.K_LEFT]:
+            self.rect.x -=int(self.speed * delta)
+        if keys[pygame.K_RIGHT]:
+            self.rect.x += int(self.speed * delta)
+        
+        hit_walls = pygame.sprite.spritecollide(self, walls, False)
+        for wall in hit_walls:
+            if keys[pygame.K_RIGHT]:
+                self.rect.right = wall.rect.left        #--> Moving right
+            if keys[pygame.K_LEFT]:
+                self.rect.left = wall.rect.right        #--> Moving left
+        
+        # Moving vertically
+        if keys[pygame.K_UP]:
+            self.rect.y -= int(self.speed * delta)
+        if keys[pygame.K_DOWN]:
+            self.rect.y += int(self.speed * delta)
+        
+        # Checking vertical collisions after vertical movement
+        hit_walls = pygame.sprite.spritecollide(self, walls, False)
+        for wall in hit_walls:
+            if keys[pygame.K_DOWN]:
+                self.rect.bottom = wall.rect.top
+            if keys[pygame.K_UP]:
+                self.rect.top = wall.rect.bottom
+        
+        # keeping player inside boundary
+        self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
