@@ -232,4 +232,5 @@ class Bullet(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.Surface((6, 6), pygame.SRCALPHA)
         pygame.draw.circle(self.image, YELLOW, (3, 3), 3)
-        self.rect = self.image.get_rect(center)    
+        self.rect = self.image.get_rect(center=(x, y))
+            
