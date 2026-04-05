@@ -79,3 +79,6 @@ class Wall(pygame.sprite.Sprite):
     def __init__(self,x ,y):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
+        self.image.fill(WALL_DARK)
+        pygame.draw.rect(self.image, WALL_LIGHT, (0, 0, TILE_SIZE, 2))
+        pygame.draw.rect(self.image, WALL_LIGHT)
