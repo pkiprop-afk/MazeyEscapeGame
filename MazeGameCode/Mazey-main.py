@@ -95,5 +95,15 @@ class Goal(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.topleft = (x, y)
 
-
+class Player(pygame.sprite.Sprite):
+    # Starting positions
+    START_X = 0
+    START_Y = 0
+    
+    def __init__(self):
+        super().__init__()
+        self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))
+        self.image.fill(BLUE)
+        self.rect = self.image.get_rect()
+        self.reset()
         
