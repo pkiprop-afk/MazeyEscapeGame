@@ -104,4 +104,6 @@ class Player(pygame.sprite.Sprite):
         super().__init__()
         self.base_speed = speed
         self.speed = speed
-        self.image = pygame.Surface((TILE_SIZE - 6, ))
+        self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCALPHA)
+        self._draw_sprite()
+        
