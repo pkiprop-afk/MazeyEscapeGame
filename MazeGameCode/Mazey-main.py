@@ -212,5 +212,6 @@ class Player(pygame.sprite.Sprite):
         elif pu_type == PU_WEAPON:
             self.weapon = random.choice(PU_WEAPON)
             self.bullets = PU_WEAPON[self.weapon]
-            
+        
+        
             
