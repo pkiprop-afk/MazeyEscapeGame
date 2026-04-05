@@ -106,4 +106,7 @@ class Player(pygame.sprite.Sprite):
         self.speed = speed
         self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCALPHA)
         self._draw_sprite()
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        Player
         
