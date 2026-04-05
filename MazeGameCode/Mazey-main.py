@@ -180,3 +180,11 @@ class Player(pygame.sprite.Sprite):
         
         # keeping player inside boundary
         self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
+        
+        # Power up timer
+        if self.powerup_timer > 0:
+            self.powerup_timer -= delta
+            if self.powerup_timer <= 0:
+                self._expire_powerup()
+    
+    
