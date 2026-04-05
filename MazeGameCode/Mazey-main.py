@@ -100,7 +100,7 @@ class Player(pygame.sprite.Sprite):
     START_X = 0
     START_Y = 0
     
-    def __init__(self):
+    def __init__(self, x, y, speed ):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE - 8, TILE_SIZE - 8))
         self.image.fill(BLUE)
