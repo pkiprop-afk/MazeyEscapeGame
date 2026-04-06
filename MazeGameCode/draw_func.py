@@ -19,3 +19,7 @@ def draw_floor(surface, x, y):
 def draw_flashlight(screen, player_center, radius, battery):
     darkness = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
     darkness.fill(BLACK)
+    
+    cx, cy = player_center
+    for r in range(radius, 0, -8):
+        
