@@ -352,3 +352,9 @@ class PatrolEnemy(pygame.sprite.Sprite):
         """ 
         chase behavior for the patrol enemy
         """
+        if self.frozen:
+            self.freeze_timer -= delta
+            if self.freeze_timer <= 0:
+                self.frozen = False
+                self._load_image(ENEMY_COL)
+            return
