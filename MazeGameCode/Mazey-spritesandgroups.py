@@ -365,4 +365,7 @@ class PatrolEnemy(pygame.sprite.Sprite):
         px, py = player.rect.centerx, player.rect.centery
         ex, ey = self.rect.centerx, self.rect.centery
         
+        # distance
+        dist = math.hypot(px - ex, py - ey)
         
+        # patrol enemy switches
