@@ -2,7 +2,7 @@ import random
 
 import pygame
 
-from .Mazey_constants import(
+from Mazey_constants import(
     FLOOR_DARK,
     FLOOR_LIGHT, 
     SCREEN_HEIGHT,
