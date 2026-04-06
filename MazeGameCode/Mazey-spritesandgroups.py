@@ -408,5 +408,12 @@ class GuardEnemy(PatrolEnemy):
     
     def _load_image(self, fall_color):
         """ 
-        Tries to load guard.png
+        Tries to load guard.png from the same folder
         """
+        try:
+            raw = pygame.image.load("guard.png").convert_alpha()
+            self.image = pygame.transform.scale(raw, (TILE_SIZE - 6, TILE_SIZE - 6))
+        
+        except FileNotFoundError:
+            self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE -6), pygame.SRCALPHA)
+            self.image.fill(BLACK)
