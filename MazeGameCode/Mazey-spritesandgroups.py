@@ -336,3 +336,5 @@ class PatrolEnemy(pygame.sprite.Sprite):
         self.frozen = False
         self.alert = False
         self._load_image(ENEMY_COL)
+    
+    
