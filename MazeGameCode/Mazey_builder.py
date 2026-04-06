@@ -22,3 +22,6 @@ def build_map(difficulty_key):
             x = col_indx * TILE_SIZE
             y = row_indx * TILE_SIZE
             
+            if tile_char == "W":
+                walls.add(Wall(x,y))
+                
