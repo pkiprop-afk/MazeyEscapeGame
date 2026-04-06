@@ -302,4 +302,6 @@ class Powerup(pygame.sprite.Sprite):
 class PatrolEnemy(pygame.sprite.Sprite):
     def __init__(self, x, y, speed=90):
         super().__init__()
-        self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCAP)
+        self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCALPHA)
+        self._load_image(ENEMY_COL)
+        
