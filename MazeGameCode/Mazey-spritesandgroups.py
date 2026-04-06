@@ -337,4 +337,9 @@ class PatrolEnemy(pygame.sprite.Sprite):
         self.alert = False
         self._load_image(ENEMY_COL)
     
-    
+    def freeze(self, duration=5.0):
+        """ 
+        stops the enemy and tints blue for a certain duration
+        """
+        self.frozen = True
+        
