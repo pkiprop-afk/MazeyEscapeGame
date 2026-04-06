@@ -318,4 +318,12 @@ class PatrolEnemy(pygame.sprite.Sprite):
         """ 
         Tries to load enemy.png from the same folder
         """
+        try:
+            raw = pygame.image.load("enemy.png").convert_alpha()
+            self.image = pygame.transform.scale(raw, (TILE_SIZE - 6, TILE_SIZE - 6))
         
+        except FileNotFoundError:
+            self.image.fill(BLACK)
+            pygame.draw.rect(self.image, fall_color, (0, 0, TILE_SIZE - 6, TILE_SIZE - 6))
+    
+    
