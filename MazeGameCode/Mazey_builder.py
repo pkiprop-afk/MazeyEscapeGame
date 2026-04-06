@@ -28,4 +28,6 @@ def build_map(difficulty_key):
             elif tile_char == ".":
                 floor_rects.append(pygame.Rect(x, y, TILE_SIZE, TILE_SIZE))
             
-            
+            elif tile_char == "P":
+                floor_rects.append(pygame.Rect(x, y, TILE_SIZE, TILE_SIZE))
+                player = Player( x + 2, y + 2, settings["speed"])
