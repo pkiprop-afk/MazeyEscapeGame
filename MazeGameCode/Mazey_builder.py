@@ -24,4 +24,8 @@ def build_map(difficulty_key):
             
             if tile_char == "W":
                 walls.add(Wall(x,y))
-                
+            
+            elif tile_char == ".":
+                floor_rects.append(pygame.Rect(x, y, TILE_SIZE, TILE_SIZE))
+            
+            
