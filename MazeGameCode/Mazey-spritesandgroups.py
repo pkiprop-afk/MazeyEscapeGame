@@ -399,4 +399,5 @@ class GuardEnemy(PatrolEnemy):
         self._guard_pos = (x, y)
     
     def reset(self):
-        self.rect.topleft = self
+        self.rect.topleft = self._start
+        
