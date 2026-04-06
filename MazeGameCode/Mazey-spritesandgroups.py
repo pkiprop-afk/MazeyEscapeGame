@@ -418,3 +418,11 @@ class GuardEnemy(PatrolEnemy):
             self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE -6), pygame.SRCALPHA)
             self.image.fill(BLACK)
             pygame.draw.rect(self.image, fall_color, (0, 0, TILE_SIZE - 6, TILE_SIZE - 6))
+    
+    def update(self, delta, walls, player, slow=1):
+        if self.frozen:
+            self.freeze_timer -= delta
+            if self.freeze_timer <= 0:
+                self.frozen = False
+                self._load_image(GUARD_COL)
+            return
