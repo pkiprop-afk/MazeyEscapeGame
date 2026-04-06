@@ -348,4 +348,7 @@ class PatrolEnemy(pygame.sprite.Sprite):
         tint.fill(BLUE)
         self.image = tint
     
-    
+    def update(self, delta, walls, player, slow = 1.0):
+        """ 
+        chase behavior for the patrol enemy
+        """
