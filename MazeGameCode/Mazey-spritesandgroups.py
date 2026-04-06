@@ -469,5 +469,5 @@ class GuardEnemy(PatrolEnemy):
             
             dist_post = math.hypot(dx, dy)
             if dist_post > 4:
-                self.rect.x += int((dx / dist_home) * self.speed * 0.5 * eff)
-                self.rect,y
+                self.rect.x += int((dx / dist_post) * self.speed * 0.5 * eff)
+                self.rect.y += int((dy / dist_post) * self.speed * 0.5 * eff)
