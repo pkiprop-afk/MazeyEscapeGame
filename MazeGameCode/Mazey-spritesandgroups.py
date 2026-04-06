@@ -440,6 +440,7 @@ class GuardEnemy(PatrolEnemy):
         self.alert = dist < FLASH_RADIUS * 1.5
 
 
+# sourcery skip: merge-nested-ifs
         if self.alert:
             if dist > 0:
                 dx = (px - ex) / dist
