@@ -375,3 +375,4 @@ class PatrolEnemy(pygame.sprite.Sprite):
             if dist > 0:
                 dx = (px - ex) / dist
                 dy = (py - ey) / dist
+                self.rect.x += int(self.speed * dx * eff)
