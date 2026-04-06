@@ -304,4 +304,13 @@ class PatrolEnemy(pygame.sprite.Sprite):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCALPHA)
         self._load_image(ENEMY_COL)
-        
+        self.rect = self.image.get_rect()
+        self.rect.topleft = (x, y)
+        self._start = (x, y)
+        self.speed = speed
+        self._vel_x = speed
+        self._vel_y = 0
+        self.frozen = False
+        self.freeze_timer = 0.0
+        self.alert = False
+    
