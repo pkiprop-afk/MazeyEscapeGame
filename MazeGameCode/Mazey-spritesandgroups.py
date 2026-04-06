@@ -5,6 +5,7 @@ import pygame
 
 from .Mazey_constants import(
     RED,
+    BLUE,
     BLACK,
     DARK_BACKGROUND,
     ENEMY_COL,
@@ -343,3 +344,8 @@ class PatrolEnemy(pygame.sprite.Sprite):
         """
         self.frozen = True
         self.freeze_timer = duration
+        tint = self.image.copy()
+        tint.fill(BLUE)
+        self.image = tint
+    
+    
