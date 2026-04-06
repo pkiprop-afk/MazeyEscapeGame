@@ -471,3 +471,5 @@ class GuardEnemy(PatrolEnemy):
             if dist_post > 4:
                 self.rect.x += int((dx / dist_post) * self.speed * 0.5 * eff)
                 self.rect.y += int((dy / dist_post) * self.speed * 0.5 * eff)
+        
+        self.rect.clamp_ip(pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT))
