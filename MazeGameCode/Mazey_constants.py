@@ -68,3 +68,23 @@ PU_COLORS = {
 # FLASHLIGHT Radius 
 FLASH_RADIUS = 160
 FLASH_RADIUS_MIN = 60
+
+MAP_DATA = [
+    "WWWWWWWWWWWWWWWWWWWWWWWWW",
+    "W.....W.........W.......GW",
+    "W.WWW.W.WWWWWWW.W.WWWWWWW",
+    "W.W...W.W.....W.W.W......W",
+    "W.W.WWW.W.WWW.W.W.W.WWWW.W",
+    "W.W.W...W.W.W...W.W......W",
+    "W.W.W.WWW.W.WWWWW.WWWWWW.W",
+    "W.W.W.W...W.......W......W",
+    "W.W.W.W.WWWWWWWWW.W.WWWW.W",
+    "W...W.W...........W.W....W",
+    "W.WWW.WWWWWWWWWWW.W.W.WW.W",
+    "W.W.....W.........W.W....W",
+    "W.W.WWW.W.WWWWWWW.W.WWWW.W",
+    "W.W.W...W.W.....W.W......W",
+    "W.W.W.WWW.W.WWW.W.WWWWWW.W",
+    "WP....W...W...W...........W",
+    "WWWWWWWWWWWWWWWWWWWWWWWWWW",
+]
