@@ -358,40 +358,38 @@ class PatrolEnemy(pygame.sprite.Sprite):
                 self.frozen = False
                 self._load_image(ENEMY_COL)
             return
-        
+
         # effects of slow time power up
         eff = delta * slow
-        
+
         px, py = player.rect.centerx, player.rect.centery
         ex, ey = self.rect.centerx, self.rect.centery
-        
+
         # distance
         dist = math.hypot(px - ex, py - ey)
-        
+
         # patrol enemy switches to chase mode within the detection range
         self.alert = dist < FLASH_RADIUS * 1.5
-        
+
         if self.alert:
             if dist > 0:
                 dx = (px - ex) / dist
                 dy = (py - ey) / dist
                 self.rect.x += int(self.speed * dx * eff)
-                
+
                 for wall in pygame.sprite.spritecollide(self, walls ,False):
                     if dx > 0:
                         self.rect.right = wall.rect.left
                     else:
                         self.rect.left = wall.rect.right
-                
+
                 self.rect.y += int(self.speed * dy * eff)
-                
+
                 for wall in pygame.sprite.spritecollide(self, walls ,False):
                     if dy > 0:
                         self.rect.bottom = wall.rect.top
                     else:
                         self.rect.top = wall.rect.bottom
         
-        else:
-            self.rect.x += int(self._vel_x * eff)
             
                 
