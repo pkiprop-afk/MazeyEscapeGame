@@ -382,3 +382,16 @@ class PatrolEnemy(pygame.sprite.Sprite):
                         self.rect.right = wall.rect.left
                     else:
                         self.rect.left = wall.rect.right
+                
+                self.rect.y += int(self.speed * dy * eff)
+                
+                for wall in pygame.sprite.spritecollide(self, walls ,False):
+                    if dy > 0:
+                        self.rect.bottom = wall.rect.top
+                    else:
+                        self.rect.top = wall.rect.bottom
+        
+        else:
+            self.rect.x += int(self._vel_x * eff)
+            
+                
