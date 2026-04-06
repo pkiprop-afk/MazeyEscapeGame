@@ -314,3 +314,7 @@ class PatrolEnemy(pygame.sprite.Sprite):
         self.freeze_timer = 0.0
         self.alert = False
     
+    def _load_image(self, fall_color):
+        """ 
+        Tries to load enemy.png in 
+        """
