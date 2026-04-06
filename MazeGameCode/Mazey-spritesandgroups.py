@@ -460,3 +460,14 @@ class GuardEnemy(PatrolEnemy):
                         self.rect.bottom = wall.rect.top
                     else:
                         self.rect.top = wall.rect.bottom
+        
+        else:
+            # make sure the guard returns to his post
+            gx, gy = self._guard_pos
+            dx = gx - self.rect.x
+            dy = gy - self.rect.y
+            
+            dist_post = math.hypot(dx, dy)
+            if dist_post > 4:
+                self.rect.x += int((dx / dist_home) * self.speed * 0.5 * eff)
+                self.rect,y
