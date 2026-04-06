@@ -360,4 +360,9 @@ class PatrolEnemy(pygame.sprite.Sprite):
             return
         
         # effects of slow time power up
+        eff = delta * slow
+        
+        px, py = player.rect.centerx, player.rect.centery
+        ex, ey = self.rect.centerx, self.rect.centery
+        
         
