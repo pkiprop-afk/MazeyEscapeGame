@@ -368,4 +368,5 @@ class PatrolEnemy(pygame.sprite.Sprite):
         # distance
         dist = math.hypot(px - ex, py - ey)
         
-        # patrol enemy switches
+        # patrol enemy switches to chase mode within the detection range
+        
