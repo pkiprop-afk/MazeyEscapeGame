@@ -417,3 +417,4 @@ class GuardEnemy(PatrolEnemy):
         except FileNotFoundError:
             self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE -6), pygame.SRCALPHA)
             self.image.fill(BLACK)
+            pygame.draw.rect(self.image, fall_color, (0, 0, TILE_SIZE - 6, TILE_SIZE - 6))
