@@ -22,4 +22,8 @@ def draw_flashlight(screen, player_center, radius, battery):
     
     cx, cy = player_center
     for r in range(radius, 0, -8):
-        
+        alpha = max(0, int(230 * (1 - r /radius)))
+        pygame.draw.circle(darkness, (0, 0, 0, alpha), (cx, cy), r)
+    
+    if battery < 0.2 and random.random() < 0.05:
+        darkness.fill
