@@ -330,4 +330,9 @@ class PatrolEnemy(pygame.sprite.Sprite):
         """ 
         Returns enemy to starting positions
         """
-        
+        self.rect.topleft = self._start
+        self._vel_x = self.speed
+        self._vel_y = 0
+        self.frozen = False
+        self.alert = False
+        self._load_image(ENEMY_COL)
