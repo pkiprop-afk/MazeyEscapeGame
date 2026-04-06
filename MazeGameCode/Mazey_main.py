@@ -240,3 +240,21 @@ class Bullet(pygame.sprite.Sprite):
     def update(self, delta, walls):
         pass
     
+    if not pygame.Rect(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT).colliderect(self.rect):
+        self.kill()
+        return
+    
+    if pygame.sprite.spritecollide(self, walls, False):
+        self.kill()
+
+class Powerup(pygame.sprite.Sprite):
+    pass
+
+class PatrolEnemy(pygame.sprite.Sprite):
+    pass
+
+class GuardEnemy (PatrolEnemy):
+    pass
+
+class Game:
+    pass
