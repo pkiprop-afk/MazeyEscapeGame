@@ -376,3 +376,9 @@ class PatrolEnemy(pygame.sprite.Sprite):
                 dx = (px - ex) / dist
                 dy = (py - ey) / dist
                 self.rect.x += int(self.speed * dx * eff)
+                
+                for wall in pygame.sprite.spritecollide(self, walls ,False):
+                    if dx > 0:
+                        self.rect.right = wall.rect.left
+                    else:
+                        self.rect.left = wall.rect.right
