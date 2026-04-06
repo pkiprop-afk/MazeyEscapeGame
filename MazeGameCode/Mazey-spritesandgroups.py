@@ -358,3 +358,6 @@ class PatrolEnemy(pygame.sprite.Sprite):
                 self.frozen = False
                 self._load_image(ENEMY_COL)
             return
+        
+        # effects of slow time power up
+        
