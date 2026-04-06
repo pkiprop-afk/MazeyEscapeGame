@@ -316,5 +316,6 @@ class PatrolEnemy(pygame.sprite.Sprite):
     
     def _load_image(self, fall_color):
         """ 
-        Tries to load enemy.png in 
+        Tries to load enemy.png from the same folder
         """
+        
