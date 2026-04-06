@@ -391,3 +391,12 @@ class PatrolEnemy(pygame.sprite.Sprite):
                         self.rect.bottom = wall.rect.top
                     else:
                         self.rect.top = wall.rect.bottom
+
+class GuardEnemy(PatrolEnemy):
+    def __init__(self, x, y, speed=70):
+        super().__init__(x, y, speed)
+        self._load_image(GUARD_COL)
+        self._guard_pos = (x, y)
+    
+    def reset(self):
+        self.rect.topleft = self
