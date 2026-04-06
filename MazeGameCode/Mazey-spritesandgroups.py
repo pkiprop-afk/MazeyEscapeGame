@@ -400,4 +400,13 @@ class GuardEnemy(PatrolEnemy):
     
     def reset(self):
         self.rect.topleft = self._start
-        
+        self._vel_x = self.speed
+        self._vel_y = 0
+        self.frozen =  False
+        self.alert = False
+        self._load_image(GUARD_COL)
+    
+    def _load_image(self, fall_color):
+        """ 
+        Tries to load guard.png
+        """
