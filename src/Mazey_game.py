@@ -35,4 +35,8 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_HEIGHT, SCREEN_WIDTH))
-        pygame.display.set_caption
+        pygame.display.set_caption(TITLE)
+        self.clock = pygame.time.Clock()
+    
+    # Fonts
+    self.font_title = pygame.font.SysFont("")
