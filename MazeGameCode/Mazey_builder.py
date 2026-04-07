@@ -51,4 +51,4 @@ def build_map(difficulty_key):
         guard_list.append(guard)
         all_enemies.add(guard)
     
-    
+    pu_floors = [r for r in floor_rects if r.x >  TILE_SIZE * 6]
