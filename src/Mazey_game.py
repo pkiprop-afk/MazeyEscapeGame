@@ -68,3 +68,5 @@ class Game:
         self.floor_rects  =[]
         self.player = None
         self.time_left = 0.0
+    
+    # This functions builds 
