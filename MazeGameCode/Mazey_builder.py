@@ -52,3 +52,10 @@ def build_map(difficulty_key):
         all_enemies.add(guard)
     
     pu_floors = [r for r in floor_rects if r.x >  TILE_SIZE * 6]
+    random.shuffle(pu_floors)
+    for i, pu_type in enumerate(ALL_POWERUPS):
+        if i < len(pu_floors):
+            rect = pu_floors[i]
+            powerups.add(Powerup(rect.x, rect.y, pu_type))
+    
+    
