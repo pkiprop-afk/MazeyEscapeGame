@@ -149,4 +149,4 @@ class Game:
         elif self.state in (STATE_WIN, STATE_GAMEOVER):
             if key == pygame.K_RETURN:
                 self._reset()
-                
+                self.state = STATE_DIFFICULT
