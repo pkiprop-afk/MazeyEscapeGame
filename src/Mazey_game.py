@@ -132,3 +132,10 @@ class Game:
             if key == pygame.K_RETURN:
                 self.difficult = self._diff_selected[self._diff_selected]
                 self._build_level()
+        
+        elif self.state == STATE_PLAYING:
+        # Space fires a bullet if the player has a weapon
+            if key == pygame.K_SPACE and self.player.weapon and self.player.bullets > 0:
+                b = Bullet(
+                    self.player
+                )
