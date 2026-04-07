@@ -92,4 +92,5 @@ class Game:
         self.screen.blit(overlay, (0, 0))
         h = self.font_title.render(heading, True, color)
         self.screen.blit(h, h.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 60)))
-        s = self.font_medium.render
+        s = self.font_medium.render(subtitle, True, WHITE)
+        
