@@ -31,3 +31,6 @@ from draw_func import draw_flashlight, draw_floor
 from Mazey_builder import build_map
 from Mazey_spritesandgroups import Bullet
 
+class Game:
+    def __init__(self):
+        pygame.init()
