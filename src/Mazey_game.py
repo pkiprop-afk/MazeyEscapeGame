@@ -59,4 +59,12 @@ class Game:
         self._diff_selected = 0
         self.difficult = "EASY"
 
-        
+        self.walls = pygame.sprite.Group()
+        self.goals = pygame.sprite.Group()
+        self.all_enemies = pygame.sprite.Group()
+        self.powerups = pygame.sprite.Group()
+        self.bullets  = pygame.sprite.Group()
+        self.all_sprites = pygame.sprite.Group()
+        self.floor_rects  =[]
+        self.player = None
+        self.time_left = 0.0
