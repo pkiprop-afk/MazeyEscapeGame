@@ -96,4 +96,9 @@ class Game:
         self.screen.blit(s, s.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 30)))
     
     # MAIN Game loop
-    
+    def run(self):
+        running = True
+        
+        while running:
+            self.clock.tick(MAX_FPS)
+            delta = self.clock.get_time() / 1000.0
