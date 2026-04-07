@@ -120,4 +120,11 @@ class Game:
     def _handle_key(self, key):
         if self.state == STATE_LOADING:
             if key == pygame.K_RETURN and self._load_done:
-                
+                self.state = STATE_DIFFICULT
+        
+        elif self.state == STATE_DIFFICULT:
+            if key in (pygame.K_UP, pygame.K_w):
+                self._diff_selected = (self._diff_selected - 1) % 3
+            
+            if key in (pygame.K_DOWN, pygame.K_s):
+                self._diff_selected = (self)
