@@ -51,5 +51,11 @@ class Game:
         self._load_done = False
         
     # Difficulty selection
-        
+        self._diff_options = [
+            "EASY",
+            "HARD",
+            "VETERAN",
+        ]
+        self._diff_selected = 0
+        self.difficult = "EASY"
     
