@@ -78,4 +78,6 @@ class Game:
         self.all_sprites.add(self.goals, self.powerups, self.all_enemies, self.player)
         self.time_left = float(DIFFICULTY[self.difficult]["time"])
         self.state = STATE_PLAYING
-        
+    
+    # Resets the player and all the enemies to their starting positions
+    
