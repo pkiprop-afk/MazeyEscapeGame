@@ -46,5 +46,9 @@ class Game:
     # Starts the game from the loading
         self.state = STATE_LOADING
         
-    # 
+    # Loading screen variables
+        self._load_timer = 0.0
+        self._load_done = False
+        
+    # Difficulty selection
     
