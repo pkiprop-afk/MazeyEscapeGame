@@ -26,3 +26,5 @@ from Mazey_constants import (
     WHITE,
     YELLOW,
 )
+
+from draw_func import 
