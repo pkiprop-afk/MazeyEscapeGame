@@ -111,3 +111,6 @@ class Game:
                     self._handle_key(event.key)
             
             self._update(delta)
+            self._draw()
+            pygame.display.flip
+            
