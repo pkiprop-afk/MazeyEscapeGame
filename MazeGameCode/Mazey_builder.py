@@ -58,4 +58,6 @@ def build_map(difficulty_key):
             rect = pu_floors[i]
             powerups.add(Powerup(rect.x, rect.y, pu_type))
     
-    return
+    return (
+        walls,
+    )
