@@ -165,8 +165,9 @@ class Game:
     
     def _update_playing(self, delta):
         """ 
-        
+        Updates the main game while the player is still playing
         """
         slow_game = 0.35 if self.player.slow_time else 1.0
+        
         
         
