@@ -150,3 +150,5 @@ class Game:
             if key == pygame.K_RETURN:
                 self._reset()
                 self.state = STATE_DIFFICULT
+    
+    
