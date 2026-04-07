@@ -102,3 +102,12 @@ class Game:
         while running:
             self.clock.tick(MAX_FPS)
             delta = self.clock.get_time() / 1000.0
+            
+            # Event handler
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    running = False
+                if event.type == pygame.KEYDOWN:
+                    self._handle_key(event.key)
+            
+            
