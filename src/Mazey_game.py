@@ -139,5 +139,5 @@ class Game:
                 b = Bullet(
                     self.player.rect.centerx,
                     self.player.rect.centery,
-                    
+                    self.player.facing
                 )
