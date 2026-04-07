@@ -127,4 +127,8 @@ class Game:
                 self._diff_selected = (self._diff_selected - 1) % 3
             
             if key in (pygame.K_DOWN, pygame.K_s):
-                self._diff_selected = (self)
+                self._diff_selected = (self._diff_selected + 1) % 3
+            
+            if key == pygame.K_RETURN:
+                self.difficult = self._diff_selected[self._diff_selected]
+                self._build_level()
