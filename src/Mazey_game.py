@@ -44,5 +44,7 @@ class Game:
         self.font_small = pygame.font.SysFont("Courier", 16)
     
     # Starts the game from the loading
-    self.state = STATE_LOADING
+        self.state = STATE_LOADING
+        
+    # 
     
