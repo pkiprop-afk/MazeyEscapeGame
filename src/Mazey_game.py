@@ -164,4 +164,6 @@ class Game:
             self._load_done = True
     
     def _update_playing(self, delta):
-        slow_
+        slow_game = 0.35 if self.player.slow_time else 1.0
+        
+        
