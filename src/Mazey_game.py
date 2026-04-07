@@ -77,5 +77,5 @@ class Game:
         self.all_sprites = pygame.sprite.Group()
         self.all_sprites.add(self.goals, self.powerups, self.all_enemies, self.player)
         self.time_left = float(DIFFICULTY[self.difficult]["time"])
-        
+        self.state = STATE_PLAYING
         
