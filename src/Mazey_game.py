@@ -110,4 +110,4 @@ class Game:
                 if event.type == pygame.KEYDOWN:
                     self._handle_key(event.key)
             
-            
+            self._update(delta)
