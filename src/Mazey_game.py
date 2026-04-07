@@ -69,4 +69,5 @@ class Game:
         self.player = None
         self.time_left = 0.0
     
-    # This functions builds 
+    # This functions builds the level using the map builder
+    
