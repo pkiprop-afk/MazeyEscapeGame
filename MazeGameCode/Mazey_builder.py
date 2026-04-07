@@ -50,3 +50,5 @@ def build_map(difficulty_key):
         guard = GuardEnemy(rect.x + 2, rect.y + 2, speed=70)
         guard_list.append(guard)
         all_enemies.add(guard)
+    
+    
