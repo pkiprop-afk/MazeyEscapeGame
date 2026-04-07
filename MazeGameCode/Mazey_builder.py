@@ -35,3 +35,8 @@ def build_map(difficulty_key):
             elif tile_char == "G":
                 floor_rects.append(pygame.Rect(x, y, TILE_SIZE, TILE_SIZE))
                 goals.add(Goal(x, y))
+    
+    safe_floors = [r for r in floor_rects if r.x > TILE_SIZE * 4]
+    random.shuffle(safe_floors)
+    
+    for i in range(nu)
