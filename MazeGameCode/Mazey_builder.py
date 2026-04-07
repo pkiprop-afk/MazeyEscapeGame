@@ -48,5 +48,5 @@ def build_map(difficulty_key):
     for i in range(min(settings["guards"], len(safe_floors) - settings["patrol"])):
         rect = safe_floors[settings["patrol"] + i]
         guard = GuardEnemy(rect.x + 2, rect.y + 2, speed=70)
-        patrol_list.append(patrol)
-        all_enemies.add(patrol)
+        guard_list.append(guard)
+        all_enemies.add(guard)
