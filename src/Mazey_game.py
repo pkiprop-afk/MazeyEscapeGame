@@ -35,4 +35,4 @@ class Game:
     def __init__(self):
         pygame.init()
         self.screen = pygame.display.set_mode((SCREEN_HEIGHT, SCREEN_WIDTH))
-        
+        pygame.display.set_caption
