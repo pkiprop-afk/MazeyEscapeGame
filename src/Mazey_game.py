@@ -84,3 +84,7 @@ class Game:
         self.player.reset()
         for e in self.all_enemies:
             e.reset()
+    
+    # This function draws a semi-transparent overlay for win or game-over screens
+    def _draw_overlay(self, heading, color, subtitle):
+        overlay = pygame.Surface(())
