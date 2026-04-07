@@ -169,6 +169,9 @@ class Game:
         """
         slow_game = 0.35 if self.player.slow_time else 1.0
         
-        # countdown timer to indicate game over when the 
-        
-        
+        # countdown timer to indicate game over when the time hits zero
+        self.time_left -= delta
+        if self.time_left <=0:
+            self.time_left = 0
+            self.state = STATE_GAMEOVER
+            return
