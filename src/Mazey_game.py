@@ -114,3 +114,5 @@ class Game:
             self._draw()
             pygame.display.flip
             
+        pygame.quit()
+        sys.exit()
