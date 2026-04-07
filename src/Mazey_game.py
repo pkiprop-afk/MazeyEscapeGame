@@ -137,5 +137,7 @@ class Game:
         # Space fires a bullet if the player has a weapon
             if key == pygame.K_SPACE and self.player.weapon and self.player.bullets > 0:
                 b = Bullet(
-                    self.player
+                    self.player.rect.centerx,
+                    self.player.rect.centery,
+                    
                 )
