@@ -39,4 +39,7 @@ def build_map(difficulty_key):
     safe_floors = [r for r in floor_rects if r.x > TILE_SIZE * 4]
     random.shuffle(safe_floors)
     
-    for i in range(nu)
+    for i in range(min(settings["patrol"], len(safe_floors))):
+        rect = safe_floors[i]
+        patrol = PatrolEnemy(rect.x + 2, rect.y + 2, speed=90 + i * 10)
+        
