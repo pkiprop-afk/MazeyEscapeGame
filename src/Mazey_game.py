@@ -141,3 +141,9 @@ class Game:
                     self.player.rect.centery,
                     self.player.facing
                 )
+                self.bullets.add(b)
+                self.player.bullets -= 1
+                if self.player.bullets <= 0:
+                    self.player.weapon = None
+        
+        
