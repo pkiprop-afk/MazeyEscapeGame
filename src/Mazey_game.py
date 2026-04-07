@@ -162,3 +162,6 @@ class Game:
         self._load_timer += delta
         if self._load_timer >= 3.0:
             self._load_done = True
+    
+    def _update_playing(self, delta):
+        slow_
