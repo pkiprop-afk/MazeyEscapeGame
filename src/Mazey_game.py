@@ -151,4 +151,14 @@ class Game:
                 self._reset()
                 self.state = STATE_DIFFICULT
     
+    def _update(self, delta):
+        if self.state == STATE_LOADING:
+            self._update_loading(delta)
+        elif self.state == STATE_PLAYING:
+            self._update_playing(delta)
     
+    # Loading screen
+    def _update_loading(self, delta):
+        self._load_timer += delta
+        if self._load_timer >= 3.0:
+            self._load_done = True
