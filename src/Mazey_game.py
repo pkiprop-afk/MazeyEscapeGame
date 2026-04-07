@@ -80,4 +80,7 @@ class Game:
         self.state = STATE_PLAYING
     
     # Resets the player and all the enemies to their starting positions
-    
+    def _reset(self):
+        self.player.reset()
+        for e in self.all_enemies:
+            e.reset()
