@@ -116,3 +116,8 @@ class Game:
             
         pygame.quit()
         sys.exit()
+    
+    def _handle_key(self, key):
+        if self.state == STATE_LOADING:
+            if key == pygame.K_RETURN and self._load_done:
+                
