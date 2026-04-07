@@ -58,4 +58,5 @@ class Game:
         ]
         self._diff_selected = 0
         self.difficult = "EASY"
-    
+
+        
