@@ -60,4 +60,11 @@ def build_map(difficulty_key):
     
     return (
         walls,
+        goals,
+        all_enemies,
+        patrol_list,
+        guard_list,
+        powerups,
+        player,
+        floor_rects,
     )
