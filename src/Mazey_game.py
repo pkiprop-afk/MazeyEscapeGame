@@ -39,8 +39,8 @@ class Game:
         self.clock = pygame.time.Clock()
     
     # Fonts
-    self.font_title = pygame.font.SysFont("Courier", 64, bold=True)
-    self.font_medium = pygame.font.SysFont("Courier", 22, bold=True)
-    self.font_small = pygame.font.SysFont("Courier", 16)
+        self.font_title = pygame.font.SysFont("Courier", 64, bold=True)
+        self.font_medium = pygame.font.SysFont("Courier", 22, bold=True)
+        self.font_small = pygame.font.SysFont("Courier", 16)
     
     
