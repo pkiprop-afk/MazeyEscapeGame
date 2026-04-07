@@ -3,7 +3,7 @@ import random
 
 import pygame
 
-from Mazey_constants import(
+from src.Mazey_constants import(
     RED,
     BLUE,
     BLACK,
