@@ -242,4 +242,5 @@ class Game:
         label = self.font_medium.render("LET'S PLAY!", True, PLAYER_COL)
         self.screen.blit(label, label.get_rect(center=box.center))
         
+        # LOADING BAR
         
