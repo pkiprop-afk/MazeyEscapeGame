@@ -292,4 +292,5 @@ class Game:
         self.walls.draw(self.screen)
         
         # All the game sprites
-        self.
+        self.sll_sprites.draw(self.screen)
+        
