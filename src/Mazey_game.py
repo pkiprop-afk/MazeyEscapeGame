@@ -201,4 +201,6 @@ class Game:
                 enemy.kill
                 bullet.kill
         
-        
+        # Win when player reaches the exit door
+        if pygame.sprite.spritecollide(self.player, self.goals, False):
+            self.state = STATE_WIN
