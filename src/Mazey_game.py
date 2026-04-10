@@ -277,4 +277,5 @@ class Game:
             self.screen.blit(label, label.get_rect(center=(SCREEN_WIDTH // 2, y +12)))
             d_text, d_color = desc[opt]
             d_label = self.font_small.render(d_text, True, d_color)
+            self.screen.blit(d_label, d_label.get_rect(center=(SCREEN_WIDTH // 2, y + 44)))
             
