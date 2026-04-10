@@ -260,6 +260,10 @@ class Game:
         desc = {
             "EASY":     ("120s | 2 Patrol | 1 Guard", GREEN),
             "HARD":     (" 75s | 3 Patrol | 2 Guards", ORANGE),
-            
-            
+            "VETERAN":  (" 45s | 5 Patrol | 2 Guards", RED),
         }
+        
+        for i, opt in enumerate(self._diff_options):
+            y = 220 + i * 110
+            color = YELLOW
+            
