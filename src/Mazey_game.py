@@ -72,7 +72,7 @@ class Game:
     
     # This functions builds the level using the map builder
     def _build_level(self):
-        build_map(self.difficulty) = (self.walls, self.goals, self.all_enemies, self.powerups, self.player, self.floor_rects)
+        (self.walls, self.goals, self.all_enemies, self.powerups, self.player, self.floor_rects) = build_map(self.difficulty) 
         
         self.bullets = pygame.sprite.Group()
         self.all_sprites = pygame.sprite.Group()
