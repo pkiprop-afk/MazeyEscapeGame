@@ -231,4 +231,5 @@ class Game:
         
         # TITLE
         t = self.font_title.render("MAZEY", True, YELLOW)
-        self.screen.blit(t, t.get_rect)
+        self.screen.blit(t, t.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 120)))
+        s = self.font_small.render("The Office Escape")
