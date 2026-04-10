@@ -300,4 +300,5 @@ class Game:
         # Heads UP Display (HUD)
         self._draw_hud()
     
-    
+    def _draw_hud(self):
+        hud = pygame.Surface(((SCREEN_WIDTH, 36)))
