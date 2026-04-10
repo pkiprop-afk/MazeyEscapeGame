@@ -269,7 +269,7 @@ class Game:
             if  i == self._diff_selected:
                 color = YELLOW
             else:
-                GRAY
+                color = GRAY
             box = pygame.Rect(SCREEN_WIDTH // 2 - 200, y - 10, 400, 80)
             if i == self._diff_selected:
                 pygame.draw.rect(self.screen, DARK_GREY, box, border_radius=6)
