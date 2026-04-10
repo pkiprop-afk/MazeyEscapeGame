@@ -245,3 +245,10 @@ class Game:
         # LOADING BAR
         bar_w = int((min(self._load_timer, 3.0) / 3.0) * 300)
         pygame.draw.rect(self.screen, DARK_BACKGROUND,(SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 + 60, 300, 12), border_radius=6)
+        pygame.draw.rect(self.screen, PLAYER_COL, (SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 + 60, bar_w, 12), border_radius=6)
+        
+        if self._load_done:
+            p = self.font_small.render(" Press ENTER to continue", True, WHITE)
+            self.screen,blit(p, p.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)))
+        
+        
