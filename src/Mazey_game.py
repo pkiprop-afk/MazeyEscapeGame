@@ -333,5 +333,6 @@ class Game:
         # Active power up timer
         if self.player.active_powerup:
             col = PU_COLORS.get(self.player.active_powerup, WHITE)
-            self.screen.blit(self.font_small.render(f"{self.player.active_powerup} {self.player.powerup_timer:.1f}s"))
+            self.screen.blit(self.font_small.render(f"{self.player.active_powerup} {self.player.powerup_timer:.1f}s", True, col), (SCREEN_WIDTH - 280, 10))
+        
         
