@@ -6,6 +6,7 @@ from Mazey_constants import (
     DARK_GREY,
     DIFFICULTY,
     GRAY,
+    BLACK,
     GREEN,
     ORANGE, 
     MAX_FPS,
@@ -302,4 +303,5 @@ class Game:
     
     def _draw_hud(self):
         hud = pygame.Surface((SCREEN_WIDTH, 36), pygame.SRCALPHA)
-        hud.fill(())
+        hud.fill((BLACK, 180))
+        
