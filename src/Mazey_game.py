@@ -230,4 +230,5 @@ class Game:
         self.screen.fill(DARK_BACKGROUND)
         
         # TITLE
-        t = self.font_title.render
+        t = self.font_title.render("MAZEY", True, YELLOW)
+        self.screen.blit(t, t.get_rect)
