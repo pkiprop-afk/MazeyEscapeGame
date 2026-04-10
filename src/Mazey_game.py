@@ -337,4 +337,4 @@ class Game:
         
         # The weapon and bullet count
         if self.player.weapon:
-            self.screen.blit
+            self.screen.blit(self.font_small.render)
