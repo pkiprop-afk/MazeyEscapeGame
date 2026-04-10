@@ -72,6 +72,13 @@ FLASH_RADIUS_MIN = 60
 # WEAPONS
 WEAPONS = ["Pistol", "Shotgun", "Sniper", "SMG", "Revolver"]
 
+WEAPON_BULLETS = {
+    "Pistol": 8,
+    "Shotgun": 4,
+    "Sniper": 3, 
+    "SMG": 20,
+    "Revolver": 6,
+}
 
 MAP_DATA = [
     "WWWWWWWWWWWWWWWWWWWWWWWWW",
