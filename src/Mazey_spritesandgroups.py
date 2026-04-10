@@ -225,7 +225,7 @@ class Player(pygame.sprite.Sprite):
             self.powerup_timer = 6.0
 
         elif pu_type == PU_WEAPON:
-            self.weapon = random.choice(PU_WEAPON)
+            self.weapon = random.choice(WEAPONS)
             self.bullets = WEAPON_BULLETS[self.weapon]
 
         elif pu_type == PU_TELEPORT:
