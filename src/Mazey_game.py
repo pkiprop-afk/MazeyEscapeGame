@@ -300,7 +300,7 @@ class Game:
     
     def _draw_hud(self):
         hud = pygame.Surface((SCREEN_WIDTH, 36), pygame.SRCALPHA)
-        hud.fill((BLACK, 180))
+        hud.fill((0, 0, 0, 180))
         self.screen.blit(hud, (0,0))
 
         mins, secs = divmod(int(self.time_left), 60)
