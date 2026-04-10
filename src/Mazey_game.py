@@ -314,5 +314,5 @@ class Game:
         else:
             WHITE
         
-        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}"))
+        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color))
         
