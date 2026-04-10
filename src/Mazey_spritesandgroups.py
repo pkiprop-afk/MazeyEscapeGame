@@ -62,7 +62,7 @@ class Goal(pygame.sprite.Sprite):
         self.image.fill(DARK_BACKGROUND)
         pygame.draw.rect(self.image, YELLOW, (4, 2, TILE_SIZE - 8, TILE_SIZE - 4 ))
         pygame.draw.rect(self.image, GOAL_GLOW, (6, 4, TILE_SIZE - 12, TILE_SIZE - 8), 2)
-        pygame.draw.circle(self.image, WHITE, (TILE_SIZE - 10, TILE_SIZE // 2 + glow_set) - 3 )
+        pygame.draw.circle(self.image, WHITE, (TILE_SIZE - 10, TILE_SIZE // 2 + glow_set), 3 )
     
     def update(self):
         self._animation_timer += 1
