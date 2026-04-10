@@ -274,4 +274,5 @@ class Game:
                 pygame.draw.rect(self.screen, DARK_GREY, box, border_radius=6)
                 pygame.draw.rect(self.screen, YELLOW, box, 2, border_radius=6)
             label = self.font_medium.render(opt, True, color)
-            self.screen.blit(label, label.get_rect(center=(SCREEN_WIDTH // 2)))
+            self.screen.blit(label, label.get_rect(center=(SCREEN_WIDTH // 2, y +12)))
+            d_text, d_color = desc[opt]
