@@ -338,3 +338,6 @@ class Game:
         # The weapon and bullet count
         if self.player.weapon:
             self.screen.blit(self.font_small.render(f"{self.player.weapon} [{self.player.bullets}]", True, ORANGE),(SCREEN_WIDTH - 280, 24 if self.player.active_powerup else 10))
+        
+        # Bottom control bar
+        
