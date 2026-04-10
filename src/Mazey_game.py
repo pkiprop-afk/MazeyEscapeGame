@@ -294,3 +294,7 @@ class Game:
         # All the game sprites
         self.sll_sprites.draw(self.screen)
         
+        # Flashlight overlaying darkness
+        draw_flashlight(self.screen, self.player.rect.center, self.player.flash_radius, self.player.flash_battery)
+        
+        
