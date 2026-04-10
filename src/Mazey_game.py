@@ -304,4 +304,6 @@ class Game:
     def _draw_hud(self):
         hud = pygame.Surface((SCREEN_WIDTH, 36), pygame.SRCALPHA)
         hud.fill((BLACK, 180))
+        self.screen.blit(hud, (0,0))
+        
         
