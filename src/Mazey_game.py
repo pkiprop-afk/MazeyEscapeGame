@@ -278,4 +278,9 @@ class Game:
             d_text, d_color = desc[opt]
             d_label = self.font_small.render(d_text, True, d_color)
             self.screen.blit(d_label, d_label.get_rect(center=(SCREEN_WIDTH // 2, y + 44)))
-            
+        
+        hint = self.font_small.render("UP/DOWN to select | ENTER to start", True, GRAY)
+        self.screen.blit(hint, hint.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT - 40)))
+    
+    # Main Gameplay
+    
