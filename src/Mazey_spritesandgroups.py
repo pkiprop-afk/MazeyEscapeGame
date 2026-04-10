@@ -210,7 +210,7 @@ class Player(pygame.sprite.Sprite):
         if self.activate_powerup == PU_SPEED_UP:
             self.speed = self.base_speed
             self.speed_boost = False
-        self.activate_powerup = None
+        self.active_powerup = None
     
     def apply_powerup(self, pu_type, enemies):
         if pu_type == PU_SLOW_TIME:
