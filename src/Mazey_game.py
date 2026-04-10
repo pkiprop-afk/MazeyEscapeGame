@@ -243,4 +243,5 @@ class Game:
         self.screen.blit(label, label.get_rect(center=box.center))
         
         # LOADING BAR
-        
+        bar_w = int((min(self._load_timer, 3.0) / 3.0) * 300)
+        pygame.draw.rect
