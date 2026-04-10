@@ -237,4 +237,7 @@ class Game:
         
         # WORD BOX
         box = pygame.Rect(SCREEN_WIDTH // 2 - 120, SCREEN_HEIGHT // 2 - 30, 240, 60)
-        pygame.draw.rect(self.screen)
+        pygame.draw.rect(self.screen, DARK_GREY, box, border_radius=8)
+        pygame.draw.rect(self.screen, PLAYER_COL, box, 2, border_radius=8)
+        label = self.font_medium.render("LET'S PLAY!", True, PLAYER_COL)
+        self.screen.blit 
