@@ -298,4 +298,6 @@ class Game:
         draw_flashlight(self.screen, self.player.rect.center, self.player.flash_radius, self.player.flash_battery)
         
         # Heads UP Display (HUD)
-        
+        self._draw_hud()
+    
+    
