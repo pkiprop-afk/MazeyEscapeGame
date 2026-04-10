@@ -131,7 +131,7 @@ class Game:
                 self._diff_selected = (self._diff_selected + 1) % 3
             
             if key == pygame.K_RETURN:
-                self.difficult = self._diff_selected[self._diff_selected]
+                self.difficult = self._diff_options[self._diff_selected]
                 self._build_level()
         
         elif self.state == STATE_PLAYING:
