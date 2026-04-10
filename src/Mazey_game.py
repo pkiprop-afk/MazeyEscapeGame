@@ -258,5 +258,8 @@ class Game:
         self.screen.blit(t, t.get_rect(center=(SCREEN_WIDTH // 2, 100)))
         
         desc = {
+            "EASY":     ("120s | 2 Patrol | 1 Guard", GREEN),
+            "HARD":     (" 75s | 3 Patrol | 2 Guards", ORANGE),
+            
             
         }
