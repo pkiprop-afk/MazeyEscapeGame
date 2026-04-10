@@ -1,2 +1,2 @@
 # MazeyEscapeGame
-Mazey_constants hosts
+Mazey_constants has the game constants
