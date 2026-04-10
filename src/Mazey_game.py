@@ -224,3 +224,10 @@ class Game:
         elif self.state == STATE_GAMEOVER:
             self._draw_playing()
             self._draw_overlay("CAUGHT! YOU LOST", RED, "ENTER to try again")
+    
+    # Loading screen
+    def _draw_loading(self):
+        self.screen.fill(DARK_BACKGROUND)
+        
+        # TITLE
+        t = self.font_title.render
