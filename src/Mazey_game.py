@@ -204,3 +204,6 @@ class Game:
         # Win when player reaches the exit door
         if pygame.sprite.spritecollide(self.player, self.goals, False):
             self.state = STATE_WIN
+        
+        # Lose when the enemy catches the player
+        
