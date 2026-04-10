@@ -316,3 +316,5 @@ class Game:
         
         self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color), (20, 8))
         
+        
+        
