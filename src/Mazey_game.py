@@ -175,3 +175,8 @@ class Game:
             self.time_left = 0
             self.state = STATE_GAMEOVER
             return
+        
+        self.player.update(delta, self.walls)
+        
+        for enemy in self.all_enemies:
+            enemy.update(delta, self.walls)
