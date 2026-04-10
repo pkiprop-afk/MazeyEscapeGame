@@ -208,3 +208,5 @@ class Game:
         # Lose when the enemy catches the player
         if pygame.sprite.spritecollide(self.player, self.all_enemies, False):
             self.state = STATE_GAMEOVER
+    
+    
