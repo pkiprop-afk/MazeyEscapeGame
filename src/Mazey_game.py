@@ -188,8 +188,14 @@ class Game:
         # Goal door animation
         self.goals.update()
         
+        # for collecting powerup while walking over it
         for pu in pygame.sprite.spritecollide(self.player, self.powerups, True):
             if pu.pu_type == PU_AUTO_WIN:
                 self.state = STATE_WIN
                 return
             self.player.apply_powerup(pu.pu_type, list(self.all_enemies))
+        
+        # Bullet hits enemy and both are removed
+        for bullet in list(self.bullets):
+            for enemy in pygame.sprite.spritecollide(bullet, self.all_enemies, False):
+                self.state = STATE_WIN
