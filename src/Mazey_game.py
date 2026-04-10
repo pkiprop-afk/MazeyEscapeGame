@@ -223,4 +223,4 @@ class Game:
             self._draw_overlay(" YOU ESCAPED!", GREEN, "ENTER to play again")
         elif self.state == STATE_GAMEOVER:
             self._draw_playing()
-            self._draw_overlay("")
+            self._draw_overlay("CAUGHT! YOU LOST", RED, "ENTER to try again")
