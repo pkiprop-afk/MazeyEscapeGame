@@ -244,4 +244,4 @@ class Game:
         
         # LOADING BAR
         bar_w = int((min(self._load_timer, 3.0) / 3.0) * 300)
-        pygame.draw.rect(self.screen, DARK_BACKGROUND,(SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT))
+        pygame.draw.rect(self.screen, DARK_BACKGROUND,(SCREEN_WIDTH // 2 - 150, SCREEN_HEIGHT // 2 + 60, 300, 12), border_radius=6)
