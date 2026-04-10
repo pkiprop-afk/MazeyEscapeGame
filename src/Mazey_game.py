@@ -301,4 +301,4 @@ class Game:
         self._draw_hud()
     
     def _draw_hud(self):
-        hud = pygame.Surface(((SCREEN_WIDTH, 36)))
+        hud = pygame.Surface(((SCREEN_WIDTH, 36), pygame.SRCALPHA)
