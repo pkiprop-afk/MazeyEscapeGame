@@ -343,4 +343,5 @@ class Game:
         ctrl = pygame.Surface((SCREEN_WIDTH, 22), pygame.SRCALPHA)
         ctrl.fill((BLACK, 140))
         self.screen.blit(ctrl, (0, SCREEN_HEIGHT - 22))
-        self.screen.blit(self.font_small.render)
+        self.screen.blit(self.font_small.render("WASD / Arrows: Move    |   SPACE: Shoot(if armed)  |   Collect glowing circles for powerups", True, GRAY), (0, SCREEN_HEIGHT - 11))
+    
