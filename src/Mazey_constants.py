@@ -69,6 +69,10 @@ PU_COLORS = {
 FLASH_RADIUS = 160
 FLASH_RADIUS_MIN = 60
 
+# WEAPONS
+WEAPONS = ["Pistol", "Shotgun", "Sniper", "SMG", "Revolver"]
+
+
 MAP_DATA = [
     "WWWWWWWWWWWWWWWWWWWWWWWWW",
     "W.....W.........W.......GW",
