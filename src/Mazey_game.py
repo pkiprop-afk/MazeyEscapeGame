@@ -233,4 +233,8 @@ class Game:
         t = self.font_title.render("MAZEY", True, YELLOW)
         self.screen.blit(t, t.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 120)))
         s = self.font_small.render("The Office Escape", True, GRAY)
+        self.screen.blit(s, s.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 70)))
         
+        # WORD BOX
+        box = pygame.Rect(SCREEN_WIDTH // 2 - 120, SCREEN_HEIGHT // 2 - 30, 240, 60)
+        pygame.draw.rect(self.screen)
