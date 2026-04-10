@@ -209,4 +209,6 @@ class Game:
         if pygame.sprite.spritecollide(self.player, self.all_enemies, False):
             self.state = STATE_GAMEOVER
     
-    
+    def _draw(self):
+        self.screen.fill(DARK_BACKGROUND)
+        
