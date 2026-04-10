@@ -328,4 +328,5 @@ class Game:
         else:
             batt_color = RED
         pygame.draw.rect(self.screen, batt_color, (batt_bar, 10, batt_width, 14), border_radius=4)
+        self.screen.blit(self.font_small.render("LIGHT", True, GRAY), (batt_bar - 46, 12))
         
