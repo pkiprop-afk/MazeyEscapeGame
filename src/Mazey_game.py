@@ -322,3 +322,10 @@ class Game:
         # Flashlight battery bar
         batt_bar = SCREEN_WIDTH // 2 - 60
         pygame.draw.rect(self.screen, DARK_GREY, (batt_bar, 10, 120, 14), border_radius=4)
+        batt_width = int(120 * self.player.flash_battery)
+        if  self.player.flash_battery > 0.4:
+            batt_color = YELLOW
+        else:
+            batt_color = RED
+        pygame.draw.rect(self.screen, batt_color, (batt_bar, 10, batt_width, 14), border_radius=4)
+        
