@@ -249,6 +249,9 @@ class Game:
         
         if self._load_done:
             p = self.font_small.render(" Press ENTER to continue", True, WHITE)
-            self.screen,blit(p, p.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)))
+            self.screen.blit(p, p.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 + 100)))
         
+    # Difficulty selection screen
+    def _draw_difficulty(self):
+        self.screen.fill(DARK_BACKGROUND)
         
