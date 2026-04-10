@@ -198,4 +198,7 @@ class Game:
         # Bullet hits enemy and both are removed
         for bullet in list(self.bullets):
             for enemy in pygame.sprite.spritecollide(bullet, self.all_enemies, False):
-                self.state = STATE_WIN
+                enemy.kill
+                bullet.kill
+        
+        
