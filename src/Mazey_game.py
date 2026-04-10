@@ -113,7 +113,7 @@ class Game:
             
             self._update(delta)
             self._draw()
-            pygame.display.flip
+            pygame.display.flip()
             
         pygame.quit()
         sys.exit()
