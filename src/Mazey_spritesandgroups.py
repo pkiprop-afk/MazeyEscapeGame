@@ -290,7 +290,7 @@ class Powerup(pygame.sprite.Sprite):
     
     def _draw(self, size):
         color = PU_COLORS.get(self.pu_type, WHITE)
-        self.image.fill(BLACK)
+        self.image.fill((0, 0, 0, 0))
         pygame.draw.circle(self.image, color, (size // 2, size // 2), size // 2)
         pygame.draw.circle(self.image, color, (size // 2, size // 2), size // 2 - 4)
         font = pygame.font.SysFont("Times", 12, bold=True)
