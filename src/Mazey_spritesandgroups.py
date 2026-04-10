@@ -228,17 +228,17 @@ class Player(pygame.sprite.Sprite):
             self.weapon = random.choice(PU_WEAPON)
             self.bullets = WEAPON_BULLETS[self.weapon]
 
-        #elif pu_type == PU_TELEPORT:
-            #patrol_only = [
-                #enemy
-                #for enemy in enemies
-                #if isinstance(enemy, PatrolEnemy) and not isinstance(enemy, GuardEnemy)
-            #]
-            #if patrol_only:
-                #target = random.choice(patrol_only)
-                #old_position = self.rect.topleft
-                #self.rect.topleft = target.rect.topleft
-                #target.rect.topleft = old_position
+        elif pu_type == PU_TELEPORT:
+            patrol_only = [
+                enemy
+                for enemy in enemies
+                if isinstance(enemy, PatrolEnemy) and not isinstance(enemy, GuardEnemy)
+            ]
+            if patrol_only:
+                target = random.choice(patrol_only)
+                old_position = self.rect.topleft
+                self.rect.topleft = target.rect.topleft
+                target.rect.topleft = old_position
 
         elif pu_type == PU_FREEZE:
             for enemy in enemies:
