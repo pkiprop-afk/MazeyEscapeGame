@@ -212,3 +212,9 @@ class Game:
     def _draw(self):
         self.screen.fill(DARK_BACKGROUND)
         
+        if self.state ==  STATE_LOADING:
+            self._draw_loading()
+        elif self.state == STATE_DIFFICULT:
+            self._draw_difficulty()
+        elif self.state == STATE_PLAYING:
+            self._draw_playing
