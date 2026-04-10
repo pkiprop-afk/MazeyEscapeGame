@@ -265,5 +265,7 @@ class Game:
         
         for i, opt in enumerate(self._diff_options):
             y = 220 + i * 110
-            color = YELLOW
-            
+            if  i == self._diff_selected:
+                color = GRAY
+            else:
+                GRAY
