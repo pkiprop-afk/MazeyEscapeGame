@@ -330,4 +330,8 @@ class Game:
         pygame.draw.rect(self.screen, batt_color, (batt_bar, 10, batt_width, 14), border_radius=4)
         self.screen.blit(self.font_small.render("LIGHT", True, GRAY), (batt_bar - 46, 12))
         
+        # Active power up timer
+        if self.player.active_powerup:
+            col = PU_COLORS.get(self.player.active_powerup, WHITE)
+            self.screen.blit(self.font_small.render(f"{self.player.active_powerup} {self.player.powerup_timer}"))
         
