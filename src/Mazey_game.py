@@ -341,4 +341,6 @@ class Game:
         
         # Bottom control bar
         ctrl = pygame.Surface((SCREEN_WIDTH, 22), pygame.SRCALPHA)
-        ctrl.fill
+        ctrl.fill((BLACK, 140))
+        self.screen.blit(ctrl, (0, SCREEN_HEIGHT - 22))
+        self.screen.blit(self.font_small.render)
