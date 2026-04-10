@@ -320,4 +320,5 @@ class Game:
         self.screen.blit(self.font_small.render(self.difficult, True, GRAY), (200, 12))
         
         # Flashlight battery bar
-        
+        batt_bar = SCREEN_WIDTH // 2 - 60
+        pygame.draw.rect(self.screen, DARK_GREY, (batt_bar, 10, 120, 14), border_radius=4)
