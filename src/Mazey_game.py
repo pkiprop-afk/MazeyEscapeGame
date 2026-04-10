@@ -255,4 +255,8 @@ class Game:
     def _draw_difficulty(self):
         self.screen.fill(DARK_BACKGROUND)
         t = self.font_title.render("SELECT DIFFICULTY", True, YELLOW)
-        self.screen.blit
+        self.screen.blit(t, t.get_rect(center=(SCREEN_WIDTH // 2, 100)))
+        
+        desc = {
+            
+        }
