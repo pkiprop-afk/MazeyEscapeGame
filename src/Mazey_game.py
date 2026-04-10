@@ -305,10 +305,8 @@ class Game:
         hud = pygame.Surface((SCREEN_WIDTH, 36), pygame.SRCALPHA)
         hud.fill((BLACK, 180))
         self.screen.blit(hud, (0,0))
-        
-        # Timer
-        mins = int(self.time_left) // 60
-        secs = int(self.time_left) % 60
+
+        mins, secs = divmod(int(self.time_left), 60)
         if self.time_left < 15:
             RED
         elif self.time_left < 30:
