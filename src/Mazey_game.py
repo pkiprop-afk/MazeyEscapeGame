@@ -199,8 +199,8 @@ class Game:
         # Bullet hits enemy and both are removed
         for bullet in list(self.bullets):
             for enemy in pygame.sprite.spritecollide(bullet, self.all_enemies, False):
-                enemy.kill
-                bullet.kill
+                enemy.kill()
+                bullet.kill()
         
         # Win when player reaches the exit door
         if pygame.sprite.spritecollide(self.player, self.goals, False):
