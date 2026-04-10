@@ -179,4 +179,17 @@ class Game:
         self.player.update(delta, self.walls)
         
         for enemy in self.all_enemies:
-            enemy.update(delta, self.walls)
+            enemy.update(delta, self.walls, self.player, slow_game)
+        
+        # updating bullet movement
+        for bullet in list(self.bullets):
+            bullet.update(delta, self.walls)
+        
+        # Goal door animation
+        self.goals.update()
+        
+        for pu in pygame.sprite.spritecollide(self.player, self.powerups, True):
+            if pu.pu_type == PU_AUTO_WIN:
+                self.state = STATE_WIN
+                return
+            self.player
