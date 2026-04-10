@@ -192,4 +192,4 @@ class Game:
             if pu.pu_type == PU_AUTO_WIN:
                 self.state = STATE_WIN
                 return
-            self.player
+            self.player.apply_powerup(pu.pu_type, list(self.all_enemies))
