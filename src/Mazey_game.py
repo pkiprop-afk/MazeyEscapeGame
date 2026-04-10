@@ -313,5 +313,6 @@ class Game:
             ORANGE
         else:
             WHITE
-            
+        
+        self.screen.blit(self.font_small.render(self.difficult))
         
