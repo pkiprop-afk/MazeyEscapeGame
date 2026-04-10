@@ -283,4 +283,13 @@ class Game:
         self.screen.blit(hint, hint.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT - 40)))
     
     # Main Gameplay
-    
+    def _draw_playing(self):
+        # floor tiles
+        for r in self.floor_rects:
+            draw_floor(self.screen, r.x, r.y)
+        
+        # walls
+        self.walls.draw(self.screen)
+        
+        # All the game sprites
+        self.
