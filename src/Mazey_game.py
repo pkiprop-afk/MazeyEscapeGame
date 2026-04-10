@@ -308,9 +308,9 @@ class Game:
 
         mins, secs = divmod(int(self.time_left), 60)
         if self.time_left < 15:
-            RED
+            time_color = RED
         elif self.time_left < 30:
-            ORANGE
+            time_color = ORANGE
         else:
             WHITE
         
