@@ -217,4 +217,7 @@ class Game:
         elif self.state == STATE_DIFFICULT:
             self._draw_difficulty()
         elif self.state == STATE_PLAYING:
-            self._draw_playing
+            self._draw_playing()
+        elif self.state == STATE_WIN:
+            self._draw_playing()
+            self._draw_overlay(" YOU ESCAPED!", GREEN)
