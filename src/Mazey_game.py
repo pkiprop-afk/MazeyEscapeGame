@@ -312,7 +312,7 @@ class Game:
         elif self.time_left < 30:
             time_color = ORANGE
         else:
-            WHITE
+            time_color = WHITE
         
-        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color))
+        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color), )
         
