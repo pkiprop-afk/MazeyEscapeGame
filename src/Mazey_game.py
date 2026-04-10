@@ -335,4 +335,6 @@ class Game:
             col = PU_COLORS.get(self.player.active_powerup, WHITE)
             self.screen.blit(self.font_small.render(f"{self.player.active_powerup} {self.player.powerup_timer:.1f}s", True, col), (SCREEN_WIDTH - 280, 10))
         
-        
+        # The weapon and bullet count
+        if self.player.weapon:
+            self.screen.blit
