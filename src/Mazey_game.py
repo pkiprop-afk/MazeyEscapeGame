@@ -340,4 +340,5 @@ class Game:
             self.screen.blit(self.font_small.render(f"{self.player.weapon} [{self.player.bullets}]", True, ORANGE),(SCREEN_WIDTH - 280, 24 if self.player.active_powerup else 10))
         
         # Bottom control bar
-        
+        ctrl = pygame.Surface((SCREEN_WIDTH, 22), pygame.SRCALPHA)
+        ctrl.fill
