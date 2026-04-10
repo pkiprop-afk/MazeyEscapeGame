@@ -314,5 +314,5 @@ class Game:
         else:
             WHITE
         
-        self.screen.blit(self.font_medium.render(self.difficult))
+        self.screen.blit(self.font_medium.render())
         
