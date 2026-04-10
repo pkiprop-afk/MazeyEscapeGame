@@ -310,32 +310,29 @@ class Game:
             time_color = ORANGE
         else:
             time_color = WHITE
-        
+
         self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color), (20, 8))
-        
+
         # Difficulty label
         self.screen.blit(self.font_small.render(self.difficult, True, GRAY), (200, 12))
-        
+
         # Flashlight battery bar
         batt_bar = SCREEN_WIDTH // 2 - 60
         pygame.draw.rect(self.screen, DARK_GREY, (batt_bar, 10, 120, 14), border_radius=4)
         batt_width = int(120 * self.player.flash_battery)
-        if  self.player.flash_battery > 0.4:
-            batt_color = YELLOW
-        else:
-            batt_color = RED
+        batt_color = YELLOW if self.player.flash_battery > 0.4 else RED
         pygame.draw.rect(self.screen, batt_color, (batt_bar, 10, batt_width, 14), border_radius=4)
         self.screen.blit(self.font_small.render("LIGHT", True, GRAY), (batt_bar - 46, 12))
-        
+
         # Active power up timer
         if self.player.active_powerup:
             col = PU_COLORS.get(self.player.active_powerup, WHITE)
             self.screen.blit(self.font_small.render(f"{self.player.active_powerup} {self.player.powerup_timer:.1f}s", True, col), (SCREEN_WIDTH - 280, 10))
-        
+
         # The weapon and bullet count
         if self.player.weapon:
             self.screen.blit(self.font_small.render(f"{self.player.weapon} [{self.player.bullets}]", True, ORANGE),(SCREEN_WIDTH - 280, 24 if self.player.active_powerup else 10))
-        
+
         # Bottom control bar
         ctrl = pygame.Surface((SCREEN_WIDTH, 22), pygame.SRCALPHA)
         ctrl.fill((BLACK, 140))
