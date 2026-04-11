@@ -320,7 +320,7 @@ class Game:
         else:
             time_color = WHITE
 
-        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs}", True, time_color), (20, 8))
+        self.screen.blit(self.font_medium.render(f"TIME {mins:01d}:{secs:02d}", True, time_color), (20, 8))
 
         # Difficulty label
         self.screen.blit(self.font_small.render(self.difficult, True, GRAY), (200, 12))
