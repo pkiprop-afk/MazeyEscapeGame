@@ -154,7 +154,7 @@ class Player(pygame.sprite.Sprite):
         self.rect.topleft = (self.START_X, self.START_Y)
         self.flash_battery = 1.0
         self.flash_radius = FLASH_RADIUS
-        self.activate_powerup = None
+        self.active_powerup = None
         self.powerup_timer = 0.0
         self.weapon = None
         self.bullets = 0
