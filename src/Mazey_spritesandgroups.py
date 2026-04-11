@@ -146,7 +146,7 @@ class Player(pygame.sprite.Sprite):
             self.image = pygame.transform.scale(raw, (TILE_SIZE - 6, TILE_SIZE - 6))
         
         except FileNotFoundError:
-            self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), )
+            self.image = pygame.Surface((TILE_SIZE - 6, TILE_SIZE - 6), pygame.SRCALPHA)
             self.image.fill((0, 0, 0, 0))
             pygame.draw.rect(self.image, PLAYER_COL, (0, 0, TILE_SIZE - 6, TILE_SIZE-6))
         
