@@ -277,7 +277,10 @@ class Player(pygame.sprite.Sprite):
 
 class Bullet(pygame.sprite.Sprite):
     """ 
-    
+    A fast-moving projectile fired by the player's weapon.
+
+    This sprite travels in a straight line until it hits a wall or leaves the
+    screen, at which point it is removed from the game.
     """
     SPEED = 500
     
