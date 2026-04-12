@@ -28,7 +28,7 @@ from Mazey_constants import (
     YELLOW,
 )
 
-from draw_func import draw_flashlight, draw_floor
+from draw_utils import draw_flashlight, draw_floor
 from Mazey_builder import build_map
 from Mazey_spritesandgroups import Bullet
 
