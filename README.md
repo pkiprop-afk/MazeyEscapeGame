@@ -6,4 +6,6 @@ You must navigate the maze armed only with a draining flashlight, navigating cor
 # Game Features
 The player character has a flashlight
 There are three difficulty levels to choose from: Easy, Hard and Veteran each with different features fitting the level of players
-There are two enemy types: Patrol Enemies and Guard Enemies
+There are two enemy types: Patrol Enemies and Guard Enemies each with different functions
+There are six unique power ups:
+    
