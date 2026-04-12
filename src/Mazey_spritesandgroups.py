@@ -58,7 +58,10 @@ class Wall(pygame.sprite.Sprite):
 
 class Goal(pygame.sprite.Sprite):
     """ 
-    
+    An animated goal tile that represents the maze exit.
+
+    This sprite displays a glowing door-like graphic and updates its visual
+    animation over time to draw the player's attention.
     """
     def __init__(self, x, y):
         super().__init__()
