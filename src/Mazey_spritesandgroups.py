@@ -83,7 +83,12 @@ class Goal(pygame.sprite.Sprite):
         self._draw(ofset)
     
 class Enemy(pygame.sprite.Sprite):
-    
+    """ 
+    A simple horizontal enemy that bounces between walls and screen edges.
+
+    This sprite moves along a line, reverses direction on collisions, and can be
+    reset back to its ```python
+    """
     START_X = 680
     START_Y = 300
     
