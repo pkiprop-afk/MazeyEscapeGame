@@ -13,13 +13,19 @@ from Mazey_constants import(
 
 def draw_floor(surface, x, y):
     """ 
-    
+    Draw a single floor tile at the given position. This creates a dark base tile with light accent lines for a subtle grid effect.
+
+    Args:
+        surface: The target Pygame surface to draw on.
+        x: The x-coordinate of the top-left corner of the tile.
+        y: The y-coordinate of the top-left corner of the tile.
     """
     pygame.draw.rect(surface, FLOOR_DARK, (x, y, TILE_SIZE, TILE_SIZE))
     pygame.draw.rect(surface, FLOOR_LIGHT, (x, y + TILE_SIZE  // 2, TILE_SIZE, 1))
     pygame.draw.rect(surface, FLOOR_LIGHT, (x + TILE_SIZE // 2, y, 1, TILE_SIZE))
 
 def draw_flashlight(screen, player_center, radius, battery):
+    
     darkness = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
     darkness.fill(BLACK)
     
