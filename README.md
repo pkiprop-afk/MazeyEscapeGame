@@ -55,4 +55,4 @@ Build the game map, entities, and powerups for a given difficulty level.
 This file handles drawing floor tiles and the flashlight effect
 
 ## Mazey_spritesandgroups.py
-
+It defines every sprite that moves or interacts in the game
