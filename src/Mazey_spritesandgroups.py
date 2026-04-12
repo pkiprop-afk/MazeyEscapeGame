@@ -83,6 +83,7 @@ class Goal(pygame.sprite.Sprite):
         self._draw(ofset)
     
 class Enemy(pygame.sprite.Sprite):
+    
     START_X = 680
     START_Y = 300
     
