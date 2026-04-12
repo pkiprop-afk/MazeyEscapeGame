@@ -45,6 +45,7 @@ class Wall(pygame.sprite.Sprite):
     movement for players, enemies, and other colliding entities.
     """
     def __init__(self,x ,y):
+        
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
         self.image.fill(WALL_DARK)
