@@ -127,6 +127,12 @@ class Enemy(pygame.sprite.Sprite):
                 self.rect.right = wall.rect.left
 
 class Player(pygame.sprite.Sprite):
+    """ 
+    The controllable character that moves through the maze and interacts with enemies and powerups.
+
+    This sprite handles player input, movement with collision, flashlight state, and
+    the activation and expiration of powerup effects such as speed, slow time, and weapons.
+    """
     # starting positions
     START_X = 0
     START_Y = 0
