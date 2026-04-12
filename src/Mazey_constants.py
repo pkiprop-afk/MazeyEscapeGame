@@ -1,7 +1,7 @@
 # CONSTANTS
 SCREEN_WIDTH = 960
 SCREEN_HEIGHT = 640
-TITLE = "MAZEY - The Office Escape"
+TITLE = "MAZEY - The Maze Escape"
 MAX_FPS = 60
 
 # COLORS
