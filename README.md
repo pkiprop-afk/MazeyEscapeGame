@@ -11,6 +11,7 @@ There are six unique power ups:
     Slow Time - slows all enemies for 8 seconds
     Speed Boost - increases player movement speed for 6 seconds
     Weapons - Player acquires a random weapon with limited ammo
-    Teleport - Instantly swaps 
-    Freeze Gun
-    Auto Win
+    Teleport - Instantly swaps  your position with a random Patrol Enemy
+    Freeze Gun - Freezes all enemies for 5 seconds
+    Auto Win - Instantly teleports the player to the exit for an automatic victory
+    
