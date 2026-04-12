@@ -14,3 +14,10 @@ There are six unique power ups:
     Teleport - Instantly swaps  your position with a random Patrol Enemy
     Freeze Gun - Freezes all enemies for 5 seconds
     Auto Win - Instantly teleports the player to the exit for an automatic victory
+
+# Controls
+W / UP Arrow - Move Up
+A / DOWN Arrow - Move Down
+S / LEFT Arrow - Move Left
+D / RIGHT Arrow - Move Right
+Shoot Weapon - 
