@@ -20,4 +20,5 @@ W / UP Arrow - Move Up
 A / DOWN Arrow - Move Down
 S / LEFT Arrow - Move Left
 D / RIGHT Arrow - Move Right
-Shoot Weapon - 
+Shoot Weapon - SPACE(Only works when you have a weapon)
+Select/ Confirm - ENTER
