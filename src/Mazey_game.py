@@ -238,7 +238,7 @@ class Game:
     # Loading screen
     def _draw_loading(self):
         """
-        
+        Displays the contents on the loading screen
         """
         self.screen.fill(DARK_BACKGROUND)
         
