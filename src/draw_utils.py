@@ -25,7 +25,14 @@ def draw_floor(surface, x, y):
     pygame.draw.rect(surface, FLOOR_LIGHT, (x + TILE_SIZE // 2, y, 1, TILE_SIZE))
 
 def draw_flashlight(screen, player_center, radius, battery):
-    
+    """ 
+    Render a circular flashlight effect centered on the player. This simulates limited visibility and flickering when the battery is low.
+
+    Args:
+        screen: The Pygame surface to draw the flashlight overlay onto.
+        player_center: The (x, y) coordinates of the flashlight center.
+        radius: The maximum radius of the visible light area.
+    """
     darkness = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
     darkness.fill(BLACK)
     
