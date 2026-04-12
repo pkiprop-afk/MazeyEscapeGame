@@ -32,4 +32,21 @@ We imported the Game class, defined a function <main()>, made an instance of the
 This file contains all the constants that are used in the game.
 
 ## Mazey_builder.py
+Build the game map, entities, and powerups for a given difficulty level.
 
+    This function translates the tile-based map data into sprite groups, a player
+    instance, and supporting structures used to run a game session.
+
+    Args:
+        difficulty_key: The key used to select difficulty settings from DIFFICULTY.
+
+    Returns:
+        A tuple containing:
+        - walls: Sprite group of wall tiles.
+        - goals: Sprite group of goal/exit tiles.
+        - all_enemies: Sprite group containing all enemy instances.
+        - patrol_list: List of patrol enemy instances.
+        - guard_list: List of guard enemy instances.
+        - powerups: Sprite group of powerup instances.
+        - player: The player instance positioned on the map.
+        - floor_rects: List of floor rectangles used for drawing and placement.
