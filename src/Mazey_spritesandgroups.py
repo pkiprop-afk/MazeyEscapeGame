@@ -311,6 +311,12 @@ class Bullet(pygame.sprite.Sprite):
             self.kill()
 
 class Powerup(pygame.sprite.Sprite):
+    """ 
+    A collectible item that grants temporary abilities or effects to the player.
+
+    This sprite represents different powerup types with distinct colors and labels,
+    and applies their effects when picked up during gameplay.
+    """
     def __init__(self, x, y, pu_type):
         super().__init__()
         self.pu_type = pu_type
