@@ -61,4 +61,6 @@ It defines every sprite that moves or interacts in the game
 This file is the core of the engine controlling the flow of the game, handles the menus, and tells all the sprites when to move and when to draw themselves.
 It contains:
     The Game Loop
+    Handling Keys
+    Drawing the Game
     
