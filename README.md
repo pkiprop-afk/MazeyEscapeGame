@@ -22,3 +22,8 @@ S / LEFT Arrow - Move Left
 D / RIGHT Arrow - Move Right
 Shoot Weapon - SPACE(Only works when you have a weapon)
 Select/ Confirm - ENTER
+
+# FILE STRUCTURE
+## Mazey_main.py
+Contains the files to start the game
+
