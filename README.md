@@ -1,5 +1,5 @@
 # MazeyEscapeGame
-Mazey- The Office Escape is a maze game built in Python using the Pygame Library. 
+Mazey- The Maze Escape is a maze game built in Python using the Pygame Library. 
 The core idea of the game is trying to escape the maze before time runs out while enemies are chasing you.
 You must navigate the maze armed only with a draining flashlight, navigating corridors, avoiding patrol enemies, collecting powerups and reaching the exit before time runs out.
 
@@ -14,4 +14,3 @@ There are six unique power ups:
     Teleport - Instantly swaps  your position with a random Patrol Enemy
     Freeze Gun - Freezes all enemies for 5 seconds
     Auto Win - Instantly teleports the player to the exit for an automatic victory
-    
