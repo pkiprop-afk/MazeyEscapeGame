@@ -57,6 +57,9 @@ class Wall(pygame.sprite.Sprite):
         self.rect.topleft = (x, y)
 
 class Goal(pygame.sprite.Sprite):
+    """ 
+    
+    """
     def __init__(self, x, y):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
