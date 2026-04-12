@@ -58,4 +58,4 @@ This file handles drawing floor tiles and the flashlight effect
 It defines every sprite that moves or interacts in the game
 
 ## Mazey_game.py
-This file is the core of the engine controlling the flow of the game, handles the menus. 
+This file is the core of the engine controlling the flow of the game, handles the menus, and tells all the sprites when to move and when to draw themselves.
