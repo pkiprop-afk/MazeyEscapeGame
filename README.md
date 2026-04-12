@@ -10,7 +10,7 @@ There are two enemy types: Patrol Enemies and Guard Enemies each with different 
 There are six unique power ups:
     Slow Time - slows all enemies for 8 seconds
     Speed Boost - increases player movement speed for 6 seconds
-    Weapons - 
-    Teleport
+    Weapons - Player acquires a random weapon with limited ammo
+    Teleport - Instantly swaps 
     Freeze Gun
     Auto Win
