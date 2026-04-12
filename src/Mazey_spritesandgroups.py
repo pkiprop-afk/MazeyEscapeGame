@@ -38,6 +38,12 @@ from Mazey_constants import(
 
 
 class Wall(pygame.sprite.Sprite):
+    """ 
+    A solid wall tile used for collision and level boundaries.
+
+    This sprite renders a single wall block at a fixed grid position and blocks
+    movement for players, enemies, and other colliding entities.
+    """
     def __init__(self,x ,y):
         super().__init__()
         self.image = pygame.Surface((TILE_SIZE, TILE_SIZE))
