@@ -276,6 +276,9 @@ class Player(pygame.sprite.Sprite):
             pass
 
 class Bullet(pygame.sprite.Sprite):
+    """ 
+    
+    """
     SPEED = 500
     
     def __init__(self, x, y, direction):
