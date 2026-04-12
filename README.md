@@ -27,3 +27,7 @@ Select/ Confirm - ENTER
 ## Mazey_main.py
 Contains the files to start the game
 We imported the Game class, defined a function <main()>, made an instance of the class Game and ran the game.
+
+## Mazey_constants.py
+This file contains all the constants that are used in the game.
+
