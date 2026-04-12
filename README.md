@@ -26,4 +26,4 @@ Select/ Confirm - ENTER
 # FILE STRUCTURE
 ## Mazey_main.py
 Contains the files to start the game
-
+We imported the Game class from 
