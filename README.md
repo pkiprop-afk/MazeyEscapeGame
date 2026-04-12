@@ -4,3 +4,5 @@ The core idea of the game is trying to escape the maze before time runs out whil
 You must navigate the maze armed only with a draining flashlight, navigating corridors, avoiding patrol enemies, collecting powerups and reaching the exit before time runs out.
 
 # Game Features
+The player character has a flashlight
+There are three difficulty levels to choose from
