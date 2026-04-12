@@ -50,3 +50,5 @@ Build the game map, entities, and powerups for a given difficulty level.
         - powerups: Sprite group of powerup instances.
         - player: The player instance positioned on the map.
         - floor_rects: List of floor rectangles used for drawing and placement.
+
+## 
