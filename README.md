@@ -26,4 +26,4 @@ Select/ Confirm - ENTER
 # FILE STRUCTURE
 ## Mazey_main.py
 Contains the files to start the game
-We imported the Game class, defined a function <main()> and ran the game
+We imported the Game class, defined a function <main()>, made an instance of the class Game and ran the game.
