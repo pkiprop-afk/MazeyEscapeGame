@@ -52,4 +52,4 @@ Build the game map, entities, and powerups for a given difficulty level.
         - floor_rects: List of floor rectangles used for drawing and placement.
 
 ## draw_utils.py
-
+This file handles drawing floor tiles and the flashlight effect
