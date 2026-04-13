@@ -216,11 +216,15 @@ class Game:
             self.state = STATE_WIN
         
         # Lose when an unfrozen enemy catches the player
-        hit_enemies = pygame.sprite.spritecollide(self.pa)
+        hit_enemies = pygame.sprite.spritecollide(self.player, self.all_enemies, False)
+        for enemy in hit_enemies:
+            if not enemy.frozen:
+                self.state = STATE_GAMEOVER
+                break
         
         # Lose when the enemy catches the player
-        if pygame.sprite.spritecollide(self.player, self.all_enemies, False):
-            self.state = STATE_GAMEOVER
+        #if pygame.sprite.spritecollide(self.player, self.all_enemies, False):
+            #self.state = STATE_GAMEOVER
     
     def _draw(self):
         self.screen.fill(DARK_BACKGROUND)
