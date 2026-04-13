@@ -43,6 +43,8 @@ class Game:
         
         # start background music
         try:
+            curr_dir = os.path.dirname(__file__)
+            
             
             pygame.mixer.music.load("soundtrack.mp3")
             pygame.mixer.music.set_volume(0.4)
