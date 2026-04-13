@@ -307,6 +307,8 @@ class Game:
         # Flashlight overlaying darkness
         draw_flashlight(self.screen, self.player.rect.center, self.player.flash_radius, self.player.flash_battery)
         
+        #Draws the player again so that 
+        
         # Heads UP Display (HUD)
         self._draw_hud()
     
