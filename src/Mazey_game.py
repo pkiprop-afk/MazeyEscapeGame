@@ -39,7 +39,16 @@ class Game:
         self.screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
         pygame.display.set_caption(TITLE)
         self.clock = pygame.time.Clock()
-    
+        
+        # start background music
+        try:
+            pygame.mixer.music.load()
+            pygame.mixer.music.set_volume(0.4)
+            pygame.mixer.music.play(-1)
+            
+        except FileNotFoundError:
+            print("Music file not found. Game will run without background music")    
+            
     # Fonts
         self.font_title = pygame.font.SysFont("Courier", 64, bold=True)
         self.font_medium = pygame.font.SysFont("Courier", 22, bold=True)
