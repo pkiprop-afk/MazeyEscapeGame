@@ -1,4 +1,5 @@
 import math
+import os
 import random
 
 import pygame
@@ -167,6 +168,7 @@ class Player(pygame.sprite.Sprite):
         Tries to load image from the same folder
         """
         try:
+            _path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "assets", "player.png")
             raw = pygame.image.load("player.png").convert_alpha()
             self.image = pygame.transform.scale(raw, (TILE_SIZE - 6, TILE_SIZE - 6))
         
