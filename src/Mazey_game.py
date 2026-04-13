@@ -45,6 +45,7 @@ class Game:
         try:
             curr_dir = os.path.dirname(__file__)
             
+            music_path = os.path.join(curr_dir, "assets", "soundtrack.mp3")
             
             pygame.mixer.music.load("soundtrack.mp3")
             pygame.mixer.music.set_volume(0.4)
