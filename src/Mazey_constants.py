@@ -83,7 +83,7 @@ WEAPON_BULLETS = {
 MAP_DATA = [
     "WWWWWWWWWWWWWWWWWWWWWWWW",
     "W.....W...........W....W",
-    "W.WWW.W.WWWWWWW.W.W.WW.W",
+    "W.WWW.W.WWWWWWW.W.W.WWGW",
     "W.W...W.......W.W....W.W",
     "W.W.WWWWWWW.WWW.WWWW.W.W",
     "W.........W.W........W.W",
@@ -95,6 +95,6 @@ MAP_DATA = [
     "W.W.W................W.W",
     "W.W.WWWWWWWWWWWWWW.W.W.W",
     "W.W..............W.W...W",
-    "WP..WWWWWWWWWWWW...WWWGW",
+    "WP..WWWWWWWWWWWW...WWW.W",
     "WWWWWWWWWWWWWWWWWWWWWWWW",
 ]
