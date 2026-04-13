@@ -1,5 +1,6 @@
 import pygame
 import sys
+import os
 
 from Mazey_constants import (
     DARK_BACKGROUND,
@@ -42,6 +43,7 @@ class Game:
         
         # start background music
         try:
+            
             pygame.mixer.music.load("soundtrack.mp3")
             pygame.mixer.music.set_volume(0.4)
             pygame.mixer.music.play(-1)
