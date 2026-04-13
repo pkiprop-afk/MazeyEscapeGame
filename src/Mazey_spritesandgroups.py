@@ -364,6 +364,7 @@ class PatrolEnemy(pygame.sprite.Sprite):
             self.image = pygame.transform.scale(raw, (TILE_SIZE - 6, TILE_SIZE - 6))
         
         except FileNotFoundError:
+            self.image = pygame.Surface
             self.image.fill(BLACK)
             pygame.draw.rect(self.image, fall_color, (0, 0, TILE_SIZE - 6, TILE_SIZE - 6))
     
