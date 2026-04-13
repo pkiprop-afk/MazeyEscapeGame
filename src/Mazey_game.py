@@ -42,7 +42,7 @@ class Game:
         
         # start background music
         try:
-            pygame.mixer.music.load()
+            pygame.mixer.music.load("soundtrack.mp3")
             pygame.mixer.music.set_volume(0.4)
             pygame.mixer.music.play(-1)
             
