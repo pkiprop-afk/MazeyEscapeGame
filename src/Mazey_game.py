@@ -98,7 +98,7 @@ class Game:
     # This function draws a semi-transparent overlay for win or game-over screens
     def _draw_overlay(self, heading, color, subtitle):
         overlay = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SRCALPHA)
-        overlay.fill(0,0,0, 128)
+        overlay.fill((0,0,0, 128))
         self.screen.blit(overlay, (0, 0))
         h = self.font_title.render(heading, True, color)
         self.screen.blit(h, h.get_rect(center=(SCREEN_WIDTH // 2, SCREEN_HEIGHT // 2 - 60)))
