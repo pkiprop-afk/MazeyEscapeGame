@@ -92,9 +92,9 @@ MAP_DATA = [
     "W.WWW.W.WWWWW.W.WWWWWWWW",
     "W...W.W.......W........W",
     "W.W.W.WWWWWWWWWWWWWW.W.W",
-    "W.W.W..............W.W.W",
+    "W.W.W................W.W",
     "W.W.WWWWWWWWWWWWWW.W.W.W",
     "W.W..............W.W...W",
-    "WP..WWWWWWWWWWWW.W.WWWGW",
+    "WP..WWWWWWWWWWWW...WWWGW",
     "WWWWWWWWWWWWWWWWWWWWWWWW",
 ]
