@@ -215,7 +215,9 @@ class Game:
         if pygame.sprite.spritecollide(self.player, self.goals, False):
             self.state = STATE_WIN
         
-        # Lose when an unfrozen ene
+        # Lose when an unfrozen enemy catches the player
+        hit_enemies = pygame.sprite.spritecollide(self.pa)
+        
         # Lose when the enemy catches the player
         if pygame.sprite.spritecollide(self.player, self.all_enemies, False):
             self.state = STATE_GAMEOVER
