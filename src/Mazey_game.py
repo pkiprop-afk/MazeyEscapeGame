@@ -301,6 +301,9 @@ class Game:
         # walls
         self.walls.draw(self.screen)
         
+        # Draws the bullets
+        self.bullets.draw(self.screen)
+        
         # All the game sprites
         self.all_sprites.draw(self.screen)
         
