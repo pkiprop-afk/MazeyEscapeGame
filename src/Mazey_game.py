@@ -48,7 +48,7 @@ class Game:
             music_path = os.path.join(curr_dir, "assets", "soundtrack.mp3")
             
             pygame.mixer.music.load(music_path)
-            pygame.mixer.music.set_volume(0.4)
+            pygame.mixer.music.set_volume(0.3)
             pygame.mixer.music.play(-1)
             
         except FileNotFoundError:
