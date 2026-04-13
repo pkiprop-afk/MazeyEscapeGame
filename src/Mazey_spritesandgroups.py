@@ -1,7 +1,6 @@
 import math
 import os
 import random
-
 import pygame
 
 from Mazey_constants import(
