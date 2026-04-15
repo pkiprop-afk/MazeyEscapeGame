@@ -57,7 +57,12 @@ This file handles drawing floor tiles and the flashlight effect
 ## Mazey_spritesandgroups.py
 It defines every sprite that moves or interacts in the game
 classes include:
-    
+    Player
+    Wall 
+    Enemy
+    Guard Enemy
+    Bullet
+    Powerup
 
 ## Mazey_game.py
 This file is the core of the engine controlling the flow of the game, handles the menus, and tells all the sprites when to move and when to draw themselves.
