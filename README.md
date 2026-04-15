@@ -63,6 +63,7 @@ classes include:
     Guard Enemy
     Bullet
     Powerup
+    Goal
 
 ## Mazey_game.py
 This file is the core of the engine controlling the flow of the game, handles the menus, and tells all the sprites when to move and when to draw themselves.
